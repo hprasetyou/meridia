@@ -14,6 +14,9 @@ module.exports = {
           ...colors.indigo,
           600: '#575ce3'
         }
+      },
+      letterSpacing: {
+        widest: '.12em'
       }
     }
   },

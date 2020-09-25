@@ -23,89 +23,21 @@
         </div>
       </div>
     </page-section>
-    <page-section class="h-screen">
-      <div class="lg:w-10/12 mx-auto what-we-do">
-        <h2 class="font-light subheader text-5xl">
-          What we do.
-        </h2>
-        <div class="flex flex-wrap mb-4">
-          <div class="w-1/3">
-            <div>
-              <h4 class="uppercase font-medium text-xl tracking-widest">
-                Web Design
-              </h4>
-              <p class="font-light">
-                Code responsive, secure, and scalable products with time-tested technologies
-              </p>
-            </div>
-          </div>
-          <div class="w-1/3">
-            <div>
-              <h4 class="uppercase font-medium text-xl tracking-widest">
-                Web Design
-              </h4>
-              <p class="font-light">
-                Code responsive, secure, and scalable products with time-tested technologies
-              </p>
-            </div>
-          </div>
-          <div class="w-1/3">
-            <div>
-              <h4 class="uppercase font-medium text-xl tracking-widest">
-                Web Design
-              </h4>
-              <p class="font-light">
-                Code responsive, secure, and scalable products with time-tested technologies
-              </p>
-            </div>
-          </div>
-          <div class="w-1/3">
-            <div>
-              <h4 class="uppercase font-medium text-xl tracking-widest">
-                Web Design
-              </h4>
-              <p class="font-light">
-                Code responsive, secure, and scalable products with time-tested technologies
-              </p>
-            </div>
-          </div>
-          <div class="w-1/3">
-            <div>
-              <h4 class="uppercase font-medium text-xl tracking-widest">
-                Web Design
-              </h4>
-              <p class="font-light">
-                Code responsive, secure, and scalable products with time-tested technologies
-              </p>
-            </div>
-          </div>
-          <div class="w-1/3">
-            <div>
-              <h4 class="uppercase font-medium text-xl tracking-widest">
-                Web Design
-              </h4>
-              <p class="font-light">
-                Code responsive, secure, and scalable products with time-tested technologies
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </page-section>
-    <page-section class="section-fullwidth bg-black h-screen md:pt-24 text-white">
-      <our-projects />
-    </page-section>
+    <our-service />
+    <our-projects />
   </div>
 </template>
 
 <script>
 import pageSection from '../components/PageSection'
 import ourProjects from '../components/pageSection/OurProjects'
+import ourService from '../components/pageSection/OurService'
 
 export default {
   components: {
     pageSection,
-    ourProjects
+    ourProjects,
+    ourService
   }
 }
 </script>
@@ -116,8 +48,9 @@ export default {
     height: 100%;
     img{
       position: absolute;
-      bottom: -40%;
-      left: 10%;
+      bottom: -35%;
+      left: 15%;
+      width: 575px;
     }
   }
   .banner--text{
@@ -127,10 +60,6 @@ export default {
     h1{
       font-size: 70px;
     }
-  }
-  .what-we-do{
-    position: relative;
-    top: 50%;
   }
 }
 </style>
