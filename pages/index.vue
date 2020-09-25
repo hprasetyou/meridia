@@ -25,6 +25,7 @@
     </page-section>
     <our-service />
     <our-projects />
+    <contact-us />
   </div>
 </template>
 
@@ -32,12 +33,14 @@
 import pageSection from '../components/PageSection'
 import ourProjects from '../components/pageSection/OurProjects'
 import ourService from '../components/pageSection/OurService'
+import contactUs from '../components/pageSection/ContactUs'
 
 export default {
   components: {
     pageSection,
     ourProjects,
-    ourService
+    ourService,
+    contactUs
   }
 }
 </script>
