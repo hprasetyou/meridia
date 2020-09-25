@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Epilogue-Regular';
+    src: url('../../assets/fonts/Epilogue/Epilogue-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Epilogue-Bold';
+    src: url('../../assets/fonts/Epilogue/Epilogue-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Epilogue-ExtraLight';
+    src: url('../../assets/fonts/Epilogue/Epilogue-ExtraLight.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Epilogue-Medium';
+    src: url('../../assets/fonts/Epilogue/Epilogue-Medium.ttf') format('truetype');
+}
+html,body{
+    font-family: 'Epilogue-Regular';
+}
