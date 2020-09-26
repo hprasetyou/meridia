@@ -5,7 +5,9 @@
         <h3 class="text-6xl mb-8 leading-tight">
           We make <br class="none md:block"> future closer
         </h3>
-        <p class="text-xl">We ask, think, craft and iterate to create <br class="none md:block"> products that achieve results</p>
+        <p class="text-xl">
+          We ask, think, craft and iterate to create <br class="none md:block"> products that achieve results
+        </p>
       </div>
       <div class="w-1/2">
         <contact-form />

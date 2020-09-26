@@ -8,12 +8,23 @@ module.exports = {
       light: ['Epilogue-ExtraLight', 'sans-serif'],
       body: ['Epilogue-Regular', 'sans-serif']
     },
+    container: {
+      padding: '2rem',
+    },
     extend: {
       colors: {
         indigo: {
           ...colors.indigo,
           600: '#575ce3'
+        },
+        gray: {
+          ...colors.gray,
+          900: '#1d1d24'
         }
+      },
+      fontSize: {
+        '7xl': '5rem',
+        '8xl': '7rem'
       },
       letterSpacing: {
         widest: '.12em'

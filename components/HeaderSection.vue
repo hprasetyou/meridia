@@ -1,31 +1,21 @@
 <template>
   <div id="header">
-    <div :class="`nav-wrapper flex z-50 bg-black border-b border-black fixed top-0 inset-x-0 z-100 ${height} items-center`">
+    <div :class="`nav-wrapper flex z-50 bg-gray-900 border-b border-gray-900 fixed top-0 inset-x-0 z-100 ${height} items-center`">
       <div class="w-full max-w-screen-xl relative mx-auto">
         <div class="flex items-center">
           <div class="lg:w-1/4 xl:w-1/5">
             <div class="flex items-center">
-              <a class="block lg:mr-4" href="/">
+              <nuxt-link class="block lg:mr-4" to="/">
                 <logo />
-              </a>
+              </nuxt-link>
             </div>
           </div>
           <div class="ml-auto">
             <ul id="main-menu" class="text-white flex">
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">Projects</a>
-              </li>
-              <li>
-                <a href="#">Capabilities</a>
-              </li>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
+              <li v-for="(item, i) in menu" :key="i">
+                <nuxt-link :to="item.link">
+                  {{ item.text }}
+                </nuxt-link>
               </li>
             </ul>
           </div>
@@ -44,6 +34,12 @@ export default {
     height: {
       type: String,
       default: 'h-24'
+    },
+    menu: {
+      type: Array,
+      default () {
+        return []
+      }
     }
   }
 }

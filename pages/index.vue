@@ -1,6 +1,6 @@
 <template>
   <div>
-    <page-section class="section-fullwidth bg-black h-screen">
+    <page-section class="section-fullwidth bg-gray-900 h-screen">
       <div class="container mx-auto h-full">
         <div class="flex banner mb-4 h-full">
           <div class="lg:w-1/2">

@@ -1,5 +1,5 @@
 <template>
-  <page-section class="section-fullwidth bg-black h-screen md:pt-24 text-white">
+  <page-section class="section-fullwidth bg-gray-900 h-screen md:pt-24 text-white">
     <div class="container mx-auto">
       <h2 class="font-light subheader text-5xl">
         Projects.
