@@ -63,7 +63,10 @@ export default {
 $mr-service-icon--size: 80px;
   .what-we-do{
     position: relative;
-    top: 32%;
+    top: 27%;
+    @media(min-width:1300px){
+      top: 32%;
+    }
   }
   .mr-service-icon{
     background-image: url('~assets/img/icons.png');

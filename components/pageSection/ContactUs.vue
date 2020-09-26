@@ -1,20 +1,25 @@
 <template>
   <page-section>
-    <div class="flex">
-      <div class="w-1/2 font-light lg:pt-32">
-        <h3 class="text-6xl">
+    <div class="flex lg:pt-48">
+      <div class="w-1/2 font-light">
+        <h3 class="text-6xl mb-8 leading-tight">
           We make <br class="none md:block"> future closer
         </h3>
-        <p>We ask, think, craft and iterate to create products that achieve results</p>
+        <p class="text-xl">We ask, think, craft and iterate to create <br class="none md:block"> products that achieve results</p>
+      </div>
+      <div class="w-1/2">
+        <contact-form />
       </div>
     </div>
   </page-section>
 </template>
 <script>
 import pageSection from '../PageSection'
+import contactForm from '../form/ContactForm'
 export default {
   components: {
-    pageSection
+    pageSection,
+    contactForm
   }
 }
 </script>
