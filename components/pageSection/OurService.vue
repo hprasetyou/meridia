@@ -1,6 +1,6 @@
 <template>
-  <page-section class="h-screen">
-    <div class="lg:w-10/12 mx-auto what-we-do">
+  <page-section class="flex">
+    <div class="lg:w-10/12 mt-auto mx-auto what-we-do">
       <h2 class="font-light subheader text-5xl">
         What we do.
       </h2>
@@ -60,14 +60,7 @@ export default {
 }
 </script>
 <style lang="scss">
-$mr-service-icon--size: 80px;
-  .what-we-do{
-    position: relative;
-    top: 27%;
-    @media(min-width:1300px){
-      top: 32%;
-    }
-  }
+  $mr-service-icon--size: 80px;
   .mr-service-icon{
     background-image: url('~assets/img/icons.png');
     width: $mr-service-icon--size;
