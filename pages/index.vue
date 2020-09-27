@@ -51,7 +51,7 @@ export default {
     height: 100%;
     img{
       position: absolute;
-      bottom: -33%;
+      top: 8%;
       left: 15%;
       width: 80%;
     }
