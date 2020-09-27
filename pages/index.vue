@@ -51,9 +51,9 @@ export default {
     height: 100%;
     img{
       position: absolute;
-      top: 8%;
+      top: 30%;
       left: 15%;
-      width: 80%;
+      height: 100vh;
     }
   }
   .banner--text{

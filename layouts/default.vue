@@ -1,10 +1,14 @@
 <template>
   <div>
-    <header-section :height="headerHeight" :menu="menu" />
-    <div class="page container mx-auto">
-      <Nuxt />
+    <div class="h-screen w-screen">
+      <header-section :height="headerHeight" :menu="menu" />
+      <smooth-scrollbar>
+        <div class="page container mx-auto">
+          <Nuxt />
+        </div>
+        <footer-section :menu="menu" :social="social" />
+      </smooth-scrollbar>
     </div>
-    <footer-section :menu="menu" :social="social" />
   </div>
 </template>
 
@@ -81,5 +85,8 @@ export default {
 body{
   max-width: 100%;
   overflow-x: hidden;
+}
+.scrollbar-track-y{
+  width: 4px;
 }
 </style>
