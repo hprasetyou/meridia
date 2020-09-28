@@ -11,7 +11,7 @@
             </div>
           </div>
           <div class="ml-auto">
-            <div class="nav-toggle block md:none px-3" @click="showNav = !showNav">
+            <div class="nav-toggle block md:hidden px-3" @click="showNav = !showNav">
               <span class="block bg-white my-2" />
               <span class="my-2" />
               <span class="block bg-white my-2" />
