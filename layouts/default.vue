@@ -87,6 +87,7 @@ body{
   overflow-x: hidden;
 }
 .scrollbar-track-y{
-  width: 4px;
+  width: 4px !important;
+  z-index: 999 !important;
 }
 </style>

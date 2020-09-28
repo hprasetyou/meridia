@@ -1,6 +1,6 @@
 <template>
-  <page-section>
-    <div class="flex lg:pt-48">
+  <page-section class="flex flex-col">
+    <div class="flex my-auto">
       <div class="w-1/2 font-light">
         <h3 class="text-6xl mb-8 leading-tight">
           We make <br class="none md:block"> future closer

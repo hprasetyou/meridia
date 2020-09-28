@@ -4,14 +4,14 @@
       <h2 class="font-light subheader text-5xl">
         What we do.
       </h2>
-      <div class="flex flex-wrap mb-4">
-        <div v-for="(service, i) in services" :key="i" class="w-1/3 mb-6">
+      <div class="flex flex-wrap mb-4 -mx-3">
+        <div v-for="(service, i) in services" :key="i" class="w-1/3 mb-6 px-3">
           <div>
             <span :class="`mr-service-icon ${'service-' + i} mb-3`" />
-            <h4 class="uppercase font-medium text-xl tracking-widest mb-3">
+            <h4 class="uppercase font-medium text-lg tracking-widest mb-3">
               {{ service.title }}
             </h4>
-            <p class="font-light">
+            <p class="font-light text-sm">
               {{ service.description }}
             </p>
             <a href="#" class="mt-6 block">Learn more</a>
@@ -60,7 +60,8 @@ export default {
 }
 </script>
 <style lang="scss">
-  $mr-service-icon--size: 80px;
+  $mr-service-icon--size: 60px;
+  $mr-service-icon--size__long: 1.325 * $mr-service-icon--size;
   .mr-service-icon{
     background-image: url('~assets/img/icons.png');
     width: $mr-service-icon--size;
@@ -75,15 +76,20 @@ export default {
     }
     &.service-3{
         background-position-x: 55%;
-        width: 106px;
+        width: $mr-service-icon--size__long;
     }
     &.service-4{
         background-position-x: 78%;
-        width: 106px;
+        width: $mr-service-icon--size__long;
     }
     &.service-5{
         background-position-x: 100%;
-        width: 106px;
+        width: $mr-service-icon--size__long;
+    }
+  }
+  @media (min-width: 1380px) {
+    .what-we-do{
+      margin-bottom: 4rem;
     }
   }
 </style>

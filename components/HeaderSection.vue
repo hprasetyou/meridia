@@ -6,7 +6,7 @@
           <div class="lg:w-1/4 xl:w-1/5">
             <div class="flex items-center">
               <nuxt-link class="block lg:mr-4" to="/">
-                <logo class="h-12" />
+                <logo class="h-10" />
               </nuxt-link>
             </div>
           </div>
