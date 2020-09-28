@@ -11,7 +11,14 @@
             </div>
           </div>
           <div class="ml-auto">
-            <div class="nav-content fixed md:static bg-gray-900 mt-16 md:mt-0">
+            <div class="nav-toggle block md:none px-3" @click="showNav = !showNav">
+              <span class="block bg-white my-2" />
+              <span class="my-2" />
+              <span class="block bg-white my-2" />
+              <span class="my-2" />
+              <span class="block bg-white my-2" />
+            </div>
+            <div :class="`nav-content ${showNav ? 'active' : ''} fixed md:static bg-gray-900 mt-16 md:mt-0`">
               <ul id="main-menu" class="text-white flex flex-col md:flex-row">
                 <li v-for="(item, i) in menu" :key="i">
                   <nuxt-link :to="item.link">
@@ -43,14 +50,27 @@ export default {
         return []
       }
     }
+  },
+  data () {
+    return {
+      showNav: false
+    }
   }
 }
 </script>
 <style lang="scss">
+.nav-toggle > span{
+  height: 2px;
+  width: 30px;
+}
 .nav-content{
   left: -100%;
   top: 0;
   bottom: 0;
+  transition: all .2s ease-in-out;
+  &.active{
+    left: 0;
+  }
 }
 #main-menu{
   li{
