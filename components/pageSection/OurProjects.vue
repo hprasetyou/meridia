@@ -4,7 +4,7 @@
       <h2 class="font-light subheader text-5xl">
         Projects.
       </h2>
-      <ul class="flex project-type">
+      <ul class="flex flex-wrap project-type">
         <li class="uppercase">
           <a href="">Web Design</a>
         </li>

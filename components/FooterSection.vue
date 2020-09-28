@@ -18,7 +18,7 @@
           </a>
         </div>
         <div class="footer-nav my-auto">
-          <div class="flex">
+          <div class="flex flex-col md:flex-row">
             <div class="w-1/4">
               <logo-short />
             </div>
@@ -31,14 +31,14 @@
                 </li>
               </ul>
             </div>
-            <div class="w-1/6">
+            <div class="md:w-1/6">
               <ul>
                 <li v-for="(item, i) in social" :key="i">
                   <a :href="item.link" :class="`footer-social ${item.type}`">{{ item.text }}</a>
                 </li>
               </ul>
             </div>
-            <div class="w-1/4">
+            <div class="md:w-1/4">
               <h3>
                 Headquarters
               </h3>
@@ -49,13 +49,13 @@
                 Mangunjiwan - Demak
               </p>
             </div>
-            <div class="w-1/4 pt-6">
+            <div class="md:w-1/4 md:pt-6">
               <p>
                 <span class="mr-4">T:</span>
                 <a href="tel:081232080801">081 232 080801</a>
               </p>
               <p>
-                <span class="mr-4">E:</span>
+                <span class="md:mr-4">E:</span>
                 <a href="mailto:hello@meridiastudio.com">hello@meridiastudio.com</a>
               </p>
             </div>

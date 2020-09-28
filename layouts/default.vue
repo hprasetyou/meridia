@@ -1,14 +1,10 @@
 <template>
   <div>
-    <div class="h-screen w-screen">
-      <header-section :height="headerHeight" :menu="menu" />
-      <smooth-scrollbar>
-        <div class="page container mx-auto">
-          <Nuxt />
-        </div>
-        <footer-section :menu="menu" :social="social" />
-      </smooth-scrollbar>
+    <header-section :height="headerHeight" :menu="menu" />
+    <div class="page container mx-auto">
+      <Nuxt />
     </div>
+    <footer-section :menu="menu" :social="social" />
   </div>
 </template>
 

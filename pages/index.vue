@@ -2,7 +2,7 @@
   <div>
     <page-section class="section-fullwidth bg-gray-900 h-screen">
       <div class="container mx-auto h-full">
-        <div class="flex banner mb-4 h-full">
+        <div class="flex banner flex-col md:flex-col mb-4 h-full">
           <div class="lg:w-1/2">
             <div class="banner--img">
               <img src="~/assets/img/iphone.png">

@@ -1,7 +1,7 @@
 <template>
   <page-section class="flex flex-col">
-    <div class="flex my-auto">
-      <div class="w-1/2 font-light">
+    <div class="flex flex-col md:flex-row my-auto">
+      <div class="md:w-1/2 font-light">
         <h3 class="text-6xl mb-8 leading-tight">
           We make <br class="none md:block"> future closer
         </h3>
@@ -9,7 +9,7 @@
           We ask, think, craft and iterate to create <br class="none md:block"> products that achieve results
         </p>
       </div>
-      <div class="w-1/2">
+      <div class="md:w-1/2">
         <contact-form />
       </div>
     </div>

@@ -9,7 +9,6 @@ module.exports = {
       body: ['Epilogue-Regular', 'sans-serif']
     },
     container: {
-      padding: '2rem',
       screens: {
         sm: '100%',
         md: '100%',
