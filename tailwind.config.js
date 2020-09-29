@@ -5,7 +5,8 @@ module.exports = {
   theme: {
     fontFamily: {
       medium: ['Epilogue-Medium', 'sans-serif'],
-      light: ['Epilogue-ExtraLight', 'sans-serif'],
+      'extra-light': ['Epilogue-ExtraLight', 'sans-serif'],
+      light: ['Epilogue-Light', 'sans-serif'],
       body: ['Epilogue-Regular', 'sans-serif']
     },
     container: {
@@ -29,7 +30,9 @@ module.exports = {
       },
       fontSize: {
         '7xl': '5rem',
-        '8xl': '7rem'
+        '8xl': '7rem',
+        subheader: '76px',
+        200: '200px'
       },
       letterSpacing: {
         widest: '.12em'

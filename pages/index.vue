@@ -10,10 +10,10 @@
           </div>
           <div class="lg:w-1/2 text-white">
             <div class="banner--text">
-              <h1 class="block md:mb-8 font-light">
+              <h1 class="block md:mb-8 font-extra-light leading-none">
                 Design and development for brands.
               </h1>
-              <a href="#" class="bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded px-8 mt-8">
+              <a href="#" class="bg-indigo-600 hover:bg-indigo-700 text-white mx-auto py-4 rounded px-12 mt-8">
                 <span class="text-white font-medium">
                   Let's Talk
                 </span>
@@ -51,7 +51,7 @@ export default {
     height: 100%;
     img{
       position: absolute;
-      top: 30%;
+      top: 21%;
       left: 15%;
       height: 100vh;
     }
@@ -62,6 +62,11 @@ export default {
     transform: translateY(-50%);
     h1{
       font-size: 70px;
+    }
+    @media(min-width: 1440px){
+      h1{
+        font-size: 94px;
+      }
     }
   }
 }

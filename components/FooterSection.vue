@@ -1,17 +1,17 @@
 <template>
-  <page-section class="bg-gray-900 h-screen md:pt-24 text-white">
+  <page-section class="bg-gray-900 md:py-24 text-white">
     <div class="container mx-auto h-full">
       <div class="flex flex-col h-full">
-        <div class="footer-jumbotron my-auto">
+        <div class="footer-jumbotron my-24">
           <div class="font-light">
-            <h2 class="text-5xl">
+            <h2 class="text-4xl md:text-6xl font-extra-light mb-0 leading-none">
               We Are
             </h2>
-            <p class="text-8xl">
+            <p class="lg:text-200 text-6xl font-extra-light leading-tight mb-10">
               Ready
             </p>
           </div>
-          <a href="#" class="bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded px-8 mt-8">
+          <a href="#" class="bg-indigo-600 hover:bg-indigo-700 text-white mx-auto py-4 rounded px-12 mt-8">
             <span class="text-white font-medium">
               Let's Talk
             </span>

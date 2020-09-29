@@ -1,12 +1,12 @@
 <template>
-  <page-section class="section-fullwidth bg-gray-900 h-screen md:py-8 text-white">
+  <page-section class="section-fullwidth bg-gray-900 md:py-32 text-white">
     <div class="container mx-auto">
-      <h2 class="font-light subheader text-5xl">
+      <h2 class="font-extra-light subheader text-5xl">
         Projects.
       </h2>
       <ul class="flex flex-wrap project-type">
         <li v-for="(item, i) in services" :key="i" class="uppercase">
-          <a href="#" @click.prevent="activeService = i; carouselIndex = 0">{{ item.title }}</a>
+          <a href="#" :class="activeService == i ? 'text-gray-400' : 'text-white'" @click.prevent="activeService = i; carouselIndex = 0">{{ item.title }}</a>
         </li>
       </ul>
     </div>
@@ -16,7 +16,7 @@
           <slide v-for="(item, i) in currentService.works" :key="i">
             <div class="pr-8" @click="carouselIndex = i">
               <div class="our-work--img mb-4">
-                <img src="~/assets/img/pages/works-photo-1.jpg" alt="">
+                <img :src="require('~/assets/img/pages/' + item.img)" alt="">
               </div>
               <h3 class="text-4xl font-light mb-4">
                 {{ item.title }}
@@ -40,7 +40,7 @@ export default {
   },
   data () {
     return {
-      carouselIndex: 1,
+      carouselIndex: 0,
       services: [{
         title: 'Web Design',
         works: []
@@ -63,19 +63,19 @@ export default {
           {
             title: 'Photo Product',
             description: 'HeHe Coffee - a Coffee shop',
-            img: '~/assets/img/pages/works-photo-1.jpg',
+            img: 'works-photo-1.jpg',
             link: ''
           },
           {
             title: 'Photo Product',
             description: 'Haha Coffee - a Coffee shop',
-            img: '~/assets/img/pages/works-photo-1.jpg',
+            img: 'works-photo-1.jpg',
             link: ''
           },
           {
             title: 'Photo Product',
             description: 'Hoho Coffee - a Coffee shop',
-            img: '~/assets/img/pages/works-photo-1.jpg',
+            img: 'works-photo-1.jpg',
             link: ''
           }
         ]
@@ -83,7 +83,7 @@ export default {
       {
         title: 'Visual Identity Design'
       }],
-      activeService: 0
+      activeService: 4
     }
   },
   computed: {
@@ -102,7 +102,9 @@ export default {
 }
 </style>
 <style>
-.VueCarousel .VueCarousel-wrapper{
-  overflow: initial;
+@media (min-width: 1080px) {
+  .VueCarousel .VueCarousel-wrapper{
+    overflow: initial;
+  }
 }
 </style>

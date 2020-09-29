@@ -1,11 +1,11 @@
 <template>
-  <page-section class="flex">
+  <page-section class="flex py-32">
     <div class="lg:w-10/12 mt-auto mx-auto what-we-do">
-      <h2 class="font-light subheader text-5xl">
+      <h2 class="font-extra-light subheader text-subheader">
         What we do.
       </h2>
       <div class="flex flex-wrap mb-4 md:-mx-3">
-        <div v-for="(service, i) in services" :key="i" class="w-1/3 mb-6 px-3">
+        <div v-for="(service, i) in services" :key="i" class="w-1/2 md:w-1/3 mb-6 px-3">
           <div>
             <span :class="`mr-service-icon ${'service-' + i} mb-3`" />
             <h4 class="uppercase font-medium text-lg tracking-widest mb-3">

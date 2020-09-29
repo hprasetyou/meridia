@@ -18,7 +18,11 @@
               <span class="my-2" />
               <span class="block bg-white my-2" />
             </div>
-            <div :class="`nav-content ${showNav ? 'active' : ''} fixed md:static bg-gray-900 mt-16 md:mt-0`">
+            <div :class="`nav-content ${showNav ? 'active' : ''} fixed md:static bg-gray-900 pt-8 md:pt-0 w-full`">
+              <div class="nav-toggle--close block md:hidden px-3" @click="showNav = false">
+                <span class="block bg-white" />
+                <span class="block bg-white" />
+              </div>
               <ul id="main-menu" class="text-white flex flex-col md:flex-row">
                 <li v-for="(item, i) in menu" :key="i">
                   <nuxt-link :to="item.link">
@@ -59,10 +63,30 @@ export default {
 }
 </script>
 <style lang="scss">
-.nav-toggle > span{
-  height: 2px;
-  width: 30px;
+.nav-toggle--close,
+.nav-toggle{
+  & > span{
+    height: 2px;
+    width: 30px;
+  }
 }
+.nav-toggle--close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    &  > span{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%) rotate(45deg);
+      & + span{
+        transform: translate(-50%,-50%) rotate(-45deg);
+      }
+    }
+}
+
 .nav-content{
   left: -100%;
   top: 0;
