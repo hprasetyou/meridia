@@ -2,7 +2,8 @@
   <div>
     <header-section :height="headerHeight" :menu="menu" />
     <div class="page container mx-auto">
-      <Nuxt />
+      <Nuxt v-if="!error" @error="onError" />
+      <error v-else :title="error == 404 ? 'Page Not Found' : 'An Error has Occured'" />
     </div>
     <footer-section :menu="menu" :social="social" />
   </div>
@@ -11,15 +12,18 @@
 <script>
 import headerSection from '../components/HeaderSection'
 import footerSection from '../components/FooterSection'
+import error from '../components/pageSection/error/error'
 
 export default {
   components: {
     headerSection,
-    footerSection
+    footerSection,
+    error
   },
   data () {
     return {
       pageYOffset: 0,
+      error: false,
       menu: [
         {
           text: 'Projects',
@@ -68,7 +72,13 @@ export default {
   beforeDestroy () {
     window.removeEventListener('scroll', this.handleScroll)
   },
+  mounted () {
+    this.error = false
+  },
   methods: {
+    onError (code) {
+      this.error = 404
+    },
     handleScroll () {
       // Your scroll handling here
       this.pageYOffset = window.pageYOffset

@@ -22,7 +22,7 @@
       </div>
     </page-section>
     <our-service id="our-service" />
-    <our-projects />
+    <our-projects :services="services" :selected="4" />
     <contact-us />
   </div>
 </template>
@@ -33,6 +33,7 @@ import ourProjects from '../components/pageSection/OurProjects'
 import ourService from '../components/pageSection/OurService'
 import contactUs from '../components/pageSection/ContactUs'
 import primaryButton from '../components/element/primaryButton'
+import data from '../components/data/data'
 
 export default {
   components: {
@@ -41,6 +42,11 @@ export default {
     ourService,
     contactUs,
     primaryButton
+  },
+  data () {
+    return {
+      services: data.projects
+    }
   }
 }
 </script>
