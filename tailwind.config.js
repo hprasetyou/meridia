@@ -14,19 +14,23 @@ module.exports = {
         sm: '100%',
         md: '100%',
         lg: '1024px',
-        xl: '1080px'
+        xl: '1300px'
       }
     },
     extend: {
       colors: {
         indigo: {
           ...colors.indigo,
-          600: '#575ce3'
+          600: '#575ce3',
+          800: '#2C2E72'
         },
         gray: {
           ...colors.gray,
           900: '#1d1d24'
         }
+      },
+      borderRadius: {
+        '3rem': '3rem'
       },
       fontSize: {
         '7xl': '5rem',

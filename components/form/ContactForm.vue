@@ -4,19 +4,20 @@
       <mr-input :key="i" v-model="contactData[inputItem.name]" :label="inputItem.label" :name="inputItem.name" :type="inputItem.type" />
     </template>
     <div class="text-center block pt-5">
-      <a href="#" class="bg-indigo-600 hover:bg-indigo-700 text-white mx-auto py-4 rounded px-12 mt-8">
-        <span class="text-white font-medium">
-          Let's Talk
-        </span>
-      </a>
+      <primary-button href="#">
+        Lets talk
+      </primary-button>
     </div>
   </form>
 </template>
 <script>
+import primaryButton from '../element/primaryButton'
 import mrInput from './elements/MrInput'
+
 export default {
   components: {
-    mrInput
+    mrInput,
+    primaryButton
   },
   data () {
     return {

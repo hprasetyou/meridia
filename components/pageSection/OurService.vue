@@ -1,17 +1,17 @@
 <template>
-  <page-section class="flex py-32">
-    <div class="lg:w-10/12 mt-auto mx-auto what-we-do">
-      <h2 class="font-extra-light subheader text-subheader">
+  <page-section class="flex py-8 md:py-32">
+    <div class="mt-auto mx-auto what-we-do">
+      <h2 class="font-extra-light subheader text-5xl md:text-subheader px-3 md:px-0 mb-5">
         What we do.
       </h2>
       <div class="flex flex-wrap mb-4 md:-mx-3">
         <div v-for="(service, i) in services" :key="i" class="w-1/2 md:w-1/3 mb-6 px-3">
-          <div>
+          <div class="font-light">
             <span :class="`mr-service-icon ${'service-' + i} mb-3`" />
-            <h4 class="uppercase font-medium text-lg tracking-widest mb-3">
+            <h4 class="uppercase  text-lg tracking-widest mb-3">
               {{ service.title }}
             </h4>
-            <p class="font-light text-sm">
+            <p class="text-sm">
               {{ service.description }}
             </p>
             <a href="#" class="mt-6 block">Learn more</a>
@@ -69,21 +69,21 @@ export default {
     display: block;
     background-size: cover;
     &.service-1{
-        background-position-x: 18%;
+        background-position-x: 11%;
     }
     &.service-2{
-        background-position-x: 34.5%;
+        background-position-x: 22.5%;
     }
     &.service-3{
-        background-position-x: 55%;
+        background-position-x: 35%;
         width: $mr-service-icon--size__long;
     }
     &.service-4{
-        background-position-x: 78%;
+        background-position-x: 50%;
         width: $mr-service-icon--size__long;
     }
     &.service-5{
-        background-position-x: 100%;
+        background-position-x: 65%;
         width: $mr-service-icon--size__long;
     }
   }

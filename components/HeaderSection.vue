@@ -1,6 +1,6 @@
 <template>
   <div id="header">
-    <div :class="`nav-wrapper flex z-50 bg-gray-900 border-b border-gray-900 fixed top-0 inset-x-0 z-100 ${height} items-center`">
+    <div :class="`nav-wrapper flex z-50 bg-gray-900 border-b border-gray-900 fixed md:relative top-0 inset-x-0 z-100 ${height} items-center`">
       <div class="w-full container relative mx-auto">
         <div class="flex items-center">
           <div class="lg:w-1/4 xl:w-1/5">
@@ -23,7 +23,7 @@
                 <span class="block bg-white" />
                 <span class="block bg-white" />
               </div>
-              <ul id="main-menu" class="text-white flex flex-col md:flex-row">
+              <ul id="main-menu" class="text-white flex flex-col md:flex-row font-light">
                 <li v-for="(item, i) in menu" :key="i">
                   <nuxt-link :to="item.link">
                     {{ item.text }}
