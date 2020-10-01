@@ -1,6 +1,9 @@
 <template>
   <div>
-    <div class="page-title my-8">
+    <div class="page-title my-8 lg:mt-16 leading-tight">
+      <h1 class="font-extra-light text-6xl">
+        {{ currentProject.title }} -
+      </h1>
       <h1 class="font-extra-light text-6xl">
         {{ currentProject.description }}
       </h1>
@@ -8,17 +11,37 @@
     <template>
       <photo-gallery :images="currentProject.gallery" />
     </template>
-    <div class="long-description">
-      <p class="font-extra-light">
-        Quoi de mieux que de pouvoir découvrir ses produits préférés sous tous
-les angles ! Modélisés en webGL, nous offrons aux futurs clients de Wedze
-l’opportunité de découvrir les masques en détail mais aussi de trouver le
-casque adéquat pour compléter leur achat.
-
-Notre volonté était ici de proposer un outil ergonomiquement simple et
-novateur tout en privilégiant l’aspect chaleureux et technique que
-véhicule la marque.
-      </p>
+    <div class="flex flex-wrap mb-16">
+      <div class="md:w-1/2">
+        <div class="long-description">
+          <p class="font-extra-light">
+            {{ currentProject.longDescription }}
+          </p>
+        </div>
+        <div class="flex mt-8">
+          <div v-for="(item, i) in currentProject.links" :key="i" class="w-1/2">
+            <a class="text-indigo-600 underline" :href="item.url">{{ item.text }}</a>
+          </div>
+        </div>
+      </div>
+      <div class="md:w-1/2">
+        <div class="w-full flex">
+          <div class="mx-auto">
+            <div class="flex">
+              <div class="w-1/2 text-right mr-3 font-medium">
+                Skills:
+              </div>
+              <div class="w-1/2 font-light">
+                <ul>
+                  <li v-for="(item, i) in currentProject.skills" :key="i">
+                    {{ item }}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>

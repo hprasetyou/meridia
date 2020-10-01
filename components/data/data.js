@@ -21,9 +21,15 @@ export default {
       {
         slug: 'hehe-coffee',
         type: 'photo-gallery',
-        title: 'Photo Product',
-        description: 'HeHe Coffee - a Coffee shop',
+        title: 'HeHe Coffee',
+        description: 'a Coffee shop',
         img: 'works-photo-1.jpg',
+        longDescription: 'Quoi de mieux que de pouvoir découvrir ses produits préférés sous tous les angles ! Modélisés en webGL, nous offrons aux futurs clients de Wedze l’opportunité de découvrir les masques en détail mais aussi de trouver le casque adéquat pour compléter leur achat. Notre volonté était ici de proposer un outil ergonomiquement simple et   novateur tout en privilégiant l’aspect chaleureux et technique que véhicule la marque.',
+        skills: [
+          'Development',
+          'UI/UX',
+          'Photography'
+        ],
         gallery: [
           {
             title: '',
@@ -99,7 +105,16 @@ export default {
             }
           }
         ],
-        link: ''
+        links: [
+          {
+            text: '@hehecoffee',
+            url: ''
+          },
+          {
+            text: 'hehecoffee.com',
+            url: 'http://hehecoffee.com'
+          }
+        ]
       },
       {
         title: 'Photo Product',

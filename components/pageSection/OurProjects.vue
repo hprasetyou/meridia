@@ -19,10 +19,10 @@
                 <img :src="require('~/assets/img/pages/' + item.img)" class="w-full" alt="">
               </div>
               <h3 class="text-4xl mb-4">
-                {{ item.title }}
+                {{ currentService.title }}
               </h3>
               <p class="mb-3">
-                {{ item.description }}
+                {{ item.title }} - {{ item.description }}
               </p>
               <nuxt-link class="underline hover:text-indigo-600" :to="`/project/${item.slug}`">
                 See More
