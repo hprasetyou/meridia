@@ -9,7 +9,7 @@
       </h1>
     </div>
     <template>
-      <photo-gallery :images="currentProject.gallery" />
+      <photo-gallery :images="currentProject.gallery" class="my-8" />
     </template>
     <div class="flex flex-wrap mb-16">
       <div class="md:w-1/2">

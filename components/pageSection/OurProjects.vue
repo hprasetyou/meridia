@@ -1,45 +1,56 @@
 <template>
-  <page-section class="section-fullwidth bg-gray-900 md:py-32 py-8 xl:py-48 text-white">
+  <page-section class="section-fullwidth">
     <div class="container mx-auto">
       <h2 class="font-extra-light md:text-subheader subheader text-5xl mb-5">
         Projects.
       </h2>
       <ul class="font-light flex flex-wrap project-type">
         <li v-for="(item, i) in services" :key="i" class="uppercase tracking-widest">
-          <a href="#" :class="activeService == i ? 'text-indigo-600' : 'text-white'" @click.prevent="activeService = i; carouselIndex = 0">{{ item.title }}</a>
+          <a href="#" :class="activeService == i ? 'text-indigo-600' : ''" @click.prevent="selectTab(i)">{{ item.title }}</a>
         </li>
       </ul>
     </div>
-    <div class="container mx-auto mt-8">
-      <client-only>
-        <carousel v-if="currentService" :navigate-to="carouselIndex" :per-page="1" :loop="true" :pagination-enabled="false">
-          <slide v-for="(item, i) in currentService.works" :key="i">
-            <div class="pr-8 font-extra-light" @click="carouselIndex = i">
-              <div class="our-work--img my-8">
-                <img :src="require('~/assets/img/pages/' + item.img)" class="w-full" alt="">
+    <div :class="`${show ? 'opacity-100':'opacity-0'} transform transition duration-300 container mx-auto mt-8`">
+      <template v-if="currentService">
+        <div v-if="showAsGrid" class="flex flex-wrap -mx-4 my-16">
+          <div v-for="(item, i) in currentService.works" :key="i" class="w-1/3 px-4 mb-8">
+            <nuxt-link :to="`/project/${item.slug}`">
+              <img-card :img="item.img" :title="item.title" :description="item.description" />
+            </nuxt-link>
+          </div>
+        </div>
+        <client-only v-else>
+          <carousel :navigate-to="carouselIndex" :per-page="1" :loop="true" :pagination-enabled="false">
+            <slide v-for="(item, i) in currentService.works" :key="i">
+              <div class="pr-8 font-extra-light" @click="carouselIndex = i">
+                <div class="our-work--img my-8">
+                  <img :src="require('~/assets/img/' + item.img)" class="w-full" alt="">
+                </div>
+                <h3 class="text-4xl mb-4">
+                  {{ currentService.title }}
+                </h3>
+                <p class="mb-3">
+                  {{ item.title }} - {{ item.description }}
+                </p>
+                <nuxt-link class="underline hover:text-indigo-600" :to="`/project/${item.slug}`">
+                  See More
+                </nuxt-link>
               </div>
-              <h3 class="text-4xl mb-4">
-                {{ currentService.title }}
-              </h3>
-              <p class="mb-3">
-                {{ item.title }} - {{ item.description }}
-              </p>
-              <nuxt-link class="underline hover:text-indigo-600" :to="`/project/${item.slug}`">
-                See More
-              </nuxt-link>
-            </div>
-          </slide>
-        </carousel>
-      </client-only>
+            </slide>
+          </carousel>
+        </client-only>
+      </template>
     </div>
   </page-section>
 </template>
 <script>
 import pageSection from '../PageSection'
+import imgCard from '../element/imgCard'
 
 export default {
   components: {
-    pageSection
+    pageSection,
+    imgCard
   },
   props: {
     services: {
@@ -51,12 +62,17 @@ export default {
     selected: {
       type: Number,
       default: 0
+    },
+    showAsGrid: {
+      type: Boolean,
+      default: false
     }
   },
   data () {
     return {
       carouselIndex: 0,
-      activeService: 0
+      activeService: 0,
+      show: true
     }
   },
   computed: {
@@ -66,6 +82,16 @@ export default {
   },
   mounted () {
     this.activeService = this.selected
+  },
+  methods: {
+    selectTab (index) {
+      this.show = false
+      setTimeout(() => {
+        this.activeService = index
+        this.carouselIndex = 0
+        this.show = true
+      }, 300)
+    }
   }
 }
 </script>

@@ -46,17 +46,17 @@ export default {
         {
           text: 'Instagram',
           type: 'instagram',
-          url: '#'
+          url: 'https://www.instagram.com/meridia.studio/'
         },
         {
           text: 'Behance',
           type: 'behance',
-          url: '#'
+          url: 'https://www.behance.net/meridiastudio'
         },
         {
           text: 'Dribble',
           type: 'dribble',
-          url: '#'
+          url: 'https://dribbble.com/meridiastudio'
         }
       ]
     }

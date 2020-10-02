@@ -37,6 +37,9 @@ export default {
           case 'bottom':
             wClass += ` md:mb-${attr[key]} md:-mt-${attr[key]}`
             break
+          case 'class':
+            wClass += ` ${attr[key]}`
+            break
           case 'zIndex':
             wClass += ` md:z-${attr[key]}`
             break

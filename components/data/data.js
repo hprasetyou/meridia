@@ -5,11 +5,146 @@ export default {
   },
   {
     title: 'Mobile App Design',
-    works: []
+    works: [
+      {
+        slug: 'buper-mobile',
+        type: 'photo-gallery',
+        title: 'Buper',
+        description: 'a Statup brand.',
+        img: 'pages/projects/buper-mobile/1.jpg',
+        longDescription: 'Quoi de mieux que de pouvoir découvrir ses produits préférés sous tous les angles ! Modélisés en webGL, nous offrons aux futurs clients de Wedze l’opportunité de découvrir les masques en détail mais aussi de trouver le casque adéquat pour compléter leur achat. Notre volonté était ici de proposer un outil ergonomiquement simple et   novateur tout en privilégiant l’aspect chaleureux et technique que véhicule la marque.',
+        skills: [
+          'Development',
+          'UI/UX',
+          'Photography'
+        ],
+        gallery: [
+          {
+            title: '',
+            img: 'pages/projects/buper-mobile/1.jpg',
+            attr: {
+              width: 'full',
+              class: 'mb-8'
+            }
+          },
+          {
+            title: '',
+            img: 'pages/projects/buper-mobile/2.jpg',
+            attr: {
+              width: '1/4'
+            }
+          },
+          {
+            title: '',
+            img: 'pages/projects/buper-mobile/3.jpg',
+            attr: {
+              width: '1/4'
+            }
+          },
+          {
+            title: '',
+            img: 'pages/projects/buper-mobile/4.jpg',
+            attr: {
+              width: '1/4'
+            }
+          }
+        ],
+        links: [
+          {
+            text: '@Buper',
+            url: ''
+          },
+          {
+            text: 'Behance',
+            url: ''
+          }
+        ]
+      }]
   },
   {
     title: 'Logo Design',
-    works: []
+    works: [
+      {
+        slug: 're-logo',
+        type: 'logo',
+        title: 'Royal Empire',
+        description: 'From Indonesia',
+        img: 'pages/projects/re.jpg',
+        longDescription: 'Quoi de mieux que de pouvoir découvrir ses produits préférés sous tous les angles ! Modélisés en webGL, nous offrons aux futurs clients de Wedze l’opportunité de découvrir les masques en détail mais aussi de trouver le casque adéquat pour compléter leur achat. Notre volonté était ici de proposer un outil ergonomiquement simple et   novateur tout en privilégiant l’aspect chaleureux et technique que véhicule la marque.',
+        skills: [
+          'Development',
+          'UI/UX',
+          'Photography'
+        ],
+        gallery: [
+          {
+            title: '',
+            img: 'pages/projects/buper.jpg'
+          }
+        ],
+        links: []
+      },
+      {
+        slug: 'xo-logo',
+        type: 'logo',
+        title: 'XO Coffee Bean',
+        description: 'From Indonesia',
+        img: 'pages/projects/xo.jpg',
+        longDescription: 'Quoi de mieux que de pouvoir découvrir ses produits préférés sous tous les angles ! Modélisés en webGL, nous offrons aux futurs clients de Wedze l’opportunité de découvrir les masques en détail mais aussi de trouver le casque adéquat pour compléter leur achat. Notre volonté était ici de proposer un outil ergonomiquement simple et   novateur tout en privilégiant l’aspect chaleureux et technique que véhicule la marque.',
+        skills: [
+          'Development',
+          'UI/UX',
+          'Photography'
+        ],
+        gallery: [
+          {
+            title: '',
+            img: 'pages/projects/buper.jpg'
+          }
+        ],
+        links: []
+      },
+      {
+        slug: 'osteak-logo',
+        type: 'logo',
+        title: 'Oesteak Furniture',
+        description: 'From USA',
+        img: 'pages/projects/osteak.jpg',
+        longDescription: 'Quoi de mieux que de pouvoir découvrir ses produits préférés sous tous les angles ! Modélisés en webGL, nous offrons aux futurs clients de Wedze l’opportunité de découvrir les masques en détail mais aussi de trouver le casque adéquat pour compléter leur achat. Notre volonté était ici de proposer un outil ergonomiquement simple et   novateur tout en privilégiant l’aspect chaleureux et technique que véhicule la marque.',
+        skills: [
+          'Development',
+          'UI/UX',
+          'Photography'
+        ],
+        gallery: [
+          {
+            title: '',
+            img: 'pages/projects/osteak.jpg'
+          }
+        ],
+        links: []
+      },
+      {
+        slug: 'buper-logo',
+        type: 'logo',
+        title: 'Buper',
+        description: 'From Indonesia',
+        img: 'pages/projects/buper.jpg',
+        longDescription: 'Quoi de mieux que de pouvoir découvrir ses produits préférés sous tous les angles ! Modélisés en webGL, nous offrons aux futurs clients de Wedze l’opportunité de découvrir les masques en détail mais aussi de trouver le casque adéquat pour compléter leur achat. Notre volonté était ici de proposer un outil ergonomiquement simple et   novateur tout en privilégiant l’aspect chaleureux et technique que véhicule la marque.',
+        skills: [
+          'Development',
+          'UI/UX',
+          'Photography'
+        ],
+        gallery: [
+          {
+            title: '',
+            img: 'pages/projects/buper.jpg'
+          }
+        ],
+        links: []
+      }
+    ]
   },
   {
     title: 'Social Media',
@@ -23,7 +158,7 @@ export default {
         type: 'photo-gallery',
         title: 'HeHe Coffee',
         description: 'a Coffee shop',
-        img: 'works-photo-1.jpg',
+        img: 'pages/works-photo-1.jpg',
         longDescription: 'Quoi de mieux que de pouvoir découvrir ses produits préférés sous tous les angles ! Modélisés en webGL, nous offrons aux futurs clients de Wedze l’opportunité de découvrir les masques en détail mais aussi de trouver le casque adéquat pour compléter leur achat. Notre volonté était ici de proposer un outil ergonomiquement simple et   novateur tout en privilégiant l’aspect chaleureux et technique que véhicule la marque.',
         skills: [
           'Development',
@@ -119,13 +254,13 @@ export default {
       {
         title: 'Photo Product',
         description: 'Haha Coffee - a Coffee shop',
-        img: 'works-photo-1.jpg',
+        img: 'pages/works-photo-1.jpg',
         link: ''
       },
       {
         title: 'Photo Product',
         description: 'Hoho Coffee - a Coffee shop',
-        img: 'works-photo-1.jpg',
+        img: 'pages/works-photo-1.jpg',
         link: ''
       }
     ]

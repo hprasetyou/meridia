@@ -14,7 +14,9 @@
             <p class="text-sm">
               {{ service.description }}
             </p>
-            <a href="#" class="mt-6 block">Learn more</a>
+            <nuxt-link :to="service.link" class="mt-6 block">
+              Learn more
+            </nuxt-link>
           </div>
         </div>
       </div>
@@ -31,8 +33,9 @@ export default {
     return {
       services: [
         {
-          title: 'Web Design',
-          description: 'Code responsive, secure, and scalable products with time-tested technologies'
+          title: 'Lets Talk',
+          description: 'Code responsive, secure, and scalable products with time-tested technologies',
+          url: ''
         },
         {
           title: 'Mobile App design',
