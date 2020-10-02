@@ -23,7 +23,13 @@
     </page-section>
     <our-service id="our-service" :services="services" />
     <our-projects class="bg-gray-900 md:py-32 py-8 xl:py-48 text-white" :services="projects" :selected="4" />
-    <contact-us id="contact" />
+    <page-section id="contact" class="flex flex-col h-screen section-fullwidth">
+      <div class="container mx-auto h-full">
+        <div class="flex h-full">
+          <contact-us class="w-full" />
+        </div>
+      </div>
+    </page-section>
   </div>
 </template>
 

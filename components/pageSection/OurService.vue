@@ -14,9 +14,9 @@
             <p class="text-sm">
               {{ service.description }}
             </p>
-            <a :href="service.link" class="mt-6 block">
+            <nuxt-link :to="service.link" class="mt-6 block">
               Lets Talk
-            </a>
+            </nuxt-link>
           </div>
         </div>
       </div>
