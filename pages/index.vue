@@ -21,9 +21,9 @@
         </div>
       </div>
     </page-section>
-    <our-service id="our-service" />
-    <our-projects class="bg-gray-900 md:py-32 py-8 xl:py-48 text-white" :services="services" :selected="4" />
-    <contact-us />
+    <our-service id="our-service" :services="services" />
+    <our-projects class="bg-gray-900 md:py-32 py-8 xl:py-48 text-white" :services="projects" :selected="4" />
+    <contact-us id="contact" />
   </div>
 </template>
 
@@ -45,7 +45,15 @@ export default {
   },
   data () {
     return {
-      services: data.projects
+      projects: data.projects
+    }
+  },
+  computed: {
+    services () {
+      return this.projects.map((item) => {
+        item.link = '#contact'
+        return item
+      })
     }
   }
 }

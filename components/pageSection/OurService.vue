@@ -14,9 +14,9 @@
             <p class="text-sm">
               {{ service.description }}
             </p>
-            <nuxt-link :to="service.link" class="mt-6 block">
-              Learn more
-            </nuxt-link>
+            <a :href="service.link" class="mt-6 block">
+              Lets Talk
+            </a>
           </div>
         </div>
       </div>
@@ -29,35 +29,16 @@ export default {
   components: {
     pageSection
   },
+  props: {
+    services: {
+      type: Array,
+      default () {
+        return []
+      }
+    }
+  },
   data () {
     return {
-      services: [
-        {
-          title: 'Lets Talk',
-          description: 'Code responsive, secure, and scalable products with time-tested technologies',
-          url: ''
-        },
-        {
-          title: 'Mobile App design',
-          description: 'Code responsive, secure, and scalable products with time-tested technologies'
-        },
-        {
-          title: 'Logo Design',
-          description: 'Code responsive, secure, and scalable products with time-tested technologies'
-        },
-        {
-          title: 'Social Media',
-          description: 'Code responsive, secure, and scalable products with time-tested technologies'
-        },
-        {
-          title: 'Photo Product',
-          description: 'Code responsive, secure, and scalable products with time-tested technologies'
-        },
-        {
-          title: 'Visual Identity Design',
-          description: 'Code responsive, secure, and scalable products with time-tested technologies'
-        }
-      ]
     }
   }
 }

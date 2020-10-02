@@ -1,10 +1,12 @@
 export default {
   projects: [{
     title: 'Web Design',
+    description: 'Code responsive, secure, and scalable products with time-tested technologies',
     works: []
   },
   {
     title: 'Mobile App Design',
+    description: 'Code responsive, secure, and scalable products with time-tested technologies',
     works: [
       {
         slug: 'buper-mobile',
@@ -63,6 +65,7 @@ export default {
   },
   {
     title: 'Logo Design',
+    description: 'Code responsive, secure, and scalable products with time-tested technologies',
     works: [
       {
         slug: 're-logo',
@@ -148,10 +151,12 @@ export default {
   },
   {
     title: 'Social Media',
+    description: 'Code responsive, secure, and scalable products with time-tested technologies',
     works: []
   },
   {
     title: 'Photo Product',
+    description: 'Code responsive, secure, and scalable products with time-tested technologies',
     works: [
       {
         slug: 'hehe-coffee',
@@ -267,6 +272,7 @@ export default {
   },
   {
     title: 'Visual Identity Design',
+    description: 'Code responsive, secure, and scalable products with time-tested technologies',
     works: []
   }]
 }
