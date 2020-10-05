@@ -4,7 +4,7 @@
       <mr-input :key="i" v-model="contactData[inputItem.name]" :label="inputItem.label" :name="inputItem.name" :type="inputItem.type" />
     </template>
     <div class="text-center block pt-5">
-      <primary-button href="#">
+      <primary-button href="#" @click.prevent="submitData">
         Lets talk
       </primary-button>
     </div>
@@ -44,6 +44,12 @@ export default {
           type: 'textArea'
         }
       ]
+    }
+  },
+  methods: {
+    async submitData () {
+      const data = await this.$axios.$post('/api/newsletter/subscribe', this.contactData)
+      console.log(data)
     }
   }
 }

@@ -86,5 +86,8 @@ export default {
       font-size: .75em;
     }
   }
+  input:-internal-autofill-selected{
+    background-color: transparent !important;
+  }
 }
 </style>

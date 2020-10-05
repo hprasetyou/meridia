@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col md:flex-row my-auto">
-    <div class="md:w-1/2 font-light">
+  <div class="flex flex-col md:flex-row my-auto p-4">
+    <div class="md:w-1/2 font-light mb-5">
       <h3 class="md:text-subheader mb-8 font-extra-light text-5xl leading-tight">
         We make <br class="none md:block"> future closer
       </h3>

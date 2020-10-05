@@ -1,5 +1,5 @@
 <template>
-  <page-section class="bg-gray-900 md:py-24 text-white">
+  <page-section class="bg-gray-900 md:py-24 text-white p-4">
     <div class="container mx-auto h-full">
       <div class="flex flex-col h-full">
         <div class="footer-jumbotron my-24">
@@ -20,6 +20,7 @@
             <div class="w-1/4">
               <logo-short />
             </div>
+            <div class="md:w-1/4" />
             <div class="w-1/6">
               <ul id="footer-menu">
                 <li v-for="(item, i) in menu" :key="i">
@@ -35,17 +36,6 @@
                   <a :href="item.link" :class="`footer-social ${item.type}`">{{ item.text }}</a>
                 </li>
               </ul>
-            </div>
-            <div class="md:w-1/4">
-              <h3>
-                Headquarters
-              </h3>
-              <p>
-                Jl. Sultan Hadiwijaya No 38
-              </p>
-              <p>
-                Mangunjiwan - Demak
-              </p>
             </div>
             <div class="md:w-1/4 md:pt-6">
               <p>

@@ -1,5 +1,6 @@
 <template>
   <a
+    @click="$emit('click', $event);"
     class="bg-gradient-to-r primary-button from-indigo-600 to-indigo-800 overflow-hidden mx-auto py-4 rounded-3rem px-12 relative mt-8"
   >
     <span style="z-index:2" class="text-white relative text-sm md:text-lg font-medium">
