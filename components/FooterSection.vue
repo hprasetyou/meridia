@@ -85,7 +85,7 @@ $soc-icon--size: 18px;
 .footer-social{
   &::before{
     content: '';
-    background-image: url('~assets/img/icons.png');
+    background-image: url('~static/img/icons.png');
     width: $soc-icon--size;
     height: $soc-icon--size;
     display: inline-block;

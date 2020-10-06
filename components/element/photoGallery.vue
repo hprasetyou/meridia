@@ -2,8 +2,11 @@
   <div>
     <div class="flex flex-wrap">
       <div v-for="(image, i) in images" :key="i" :class="'flex' + generateClass(image.attr)" alt="">
-        <img :src="require('~/assets/img/' + image.img)" class="mt-auto" alt="">
+        <img :src="require('~/static/img/' + image.img)" class="mt-auto" alt="">
       </div>
+    </div>
+    <div v-if="showImage" class="big-image">
+      <img src="" alt="">
     </div>
   </div>
 </template>
@@ -15,6 +18,11 @@ export default {
       default () {
         return []
       }
+    }
+  },
+  data () {
+    return {
+      showImage: false
     }
   },
   methods: {

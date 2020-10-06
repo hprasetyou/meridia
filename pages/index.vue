@@ -5,7 +5,7 @@
         <div class="flex banner flex-row mb-4 h-full">
           <div class="w-1/2 px-4 flex">
             <div class="banner--img my-auto mt-40 ml-auto">
-              <img src="~/assets/img/iphone.png">
+              <img src="~/static/img/iphone.png">
             </div>
           </div>
           <div class="w-1/2 text-white flex">

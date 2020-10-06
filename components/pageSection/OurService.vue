@@ -47,7 +47,7 @@ export default {
   $mr-service-icon--size: 60px;
   $mr-service-icon--size__long: 1.325 * $mr-service-icon--size;
   .mr-service-icon{
-    background-image: url('~assets/img/icons.png');
+    background-image: url('~static/img/icons.png');
     width: $mr-service-icon--size;
     height: $mr-service-icon--size;
     display: block;
