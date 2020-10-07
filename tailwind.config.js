@@ -54,5 +54,13 @@ module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true
+  },
+  purge: {
+    content: ['./src/**/*.html'],
+
+    // These options are passed through directly to PurgeCSS
+    options: {
+      whitelistPatterns: [/^md:m/, /^md:-m/, /^md:z/, /^md:w/]
+    }
   }
 }

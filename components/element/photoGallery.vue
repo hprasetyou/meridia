@@ -12,7 +12,7 @@
       </div>
     </div>
     <div class="flex flex-wrap">
-      <div v-for="(image, i) in images" :key="i" :class="'flex' + generateClass(image.attr)" alt="" @click="setLightImage(i)">
+      <div v-for="(image, i) in images" :key="i" :class="generateClass(image.attr)" alt="" @click="setLightImage(i)">
         <img :src="require('~/static/img/' + image.img)" class="mt-auto" alt="">
       </div>
     </div>
@@ -36,33 +36,35 @@ export default {
   },
   methods: {
     generateClass (attr) {
-      let wClass = ''
+      const cClass = {
+        flex: true
+      }
       for (const key in attr) {
         switch (key) {
           case 'width':
-            wClass += ` md:w-${attr[key]}`
+            cClass[`md:w-${attr[key]}`] = true
             break
           case 'left':
-            wClass += ` md:ml-${attr[key]} md:-mr-${attr[key]}`
+            cClass[`md:ml-${attr[key]} md:-mr-${attr[key]}`] = true
             break
           case 'right':
-            wClass += ` md:mr-${attr[key]} md:-ml-${attr[key]}`
+            cClass[`md:mr-${attr[key]} md:-ml-${attr[key]}`] = true
             break
           case 'top':
-            wClass += ` md:mt-${attr[key]} md:-mb-${attr[key]}`
+            cClass[`md:mt-${attr[key]} md:-mb-${attr[key]}`] = true
             break
           case 'bottom':
-            wClass += ` md:mb-${attr[key]} md:-mt-${attr[key]}`
+            cClass[`md:mb-${attr[key]} md:-mt-${attr[key]}`] = true
             break
           case 'class':
-            wClass += ` ${attr[key]}`
+            cClass[`${attr[key]}`] = true
             break
           case 'zIndex':
-            wClass += ` md:z-${attr[key]}`
+            cClass[`md:z-${attr[key]}`] = true
             break
         }
       }
-      return wClass
+      return cClass
     },
     setLightImage (i) {
       this.lbImage = i
