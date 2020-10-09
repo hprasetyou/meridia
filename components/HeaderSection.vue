@@ -16,8 +16,7 @@
             </div>
             <div :class="`nav-content ${showNav ? 'active' : ''} fixed md:static ${ bgColor } pt-8 md:pt-0 w-full`">
               <div class="nav-toggle--close block md:hidden px-3" @click="showNav = false">
-                <span class="block bg-white" />
-                <span class="block bg-white" />
+                <span v-for="i in 2" :key="i" :class="`block ${mobileNavToggleColor}`" />
               </div>
               <ul id="main-menu" :class="`${textColor} flex flex-col md:flex-row font-light`">
                 <li v-for="(item, i) in menu" :key="i">
