@@ -12,6 +12,9 @@ import contactUs from '../components/pageSection/ContactUs'
 export default {
   components: {
     contactUs
+  },
+  mounted () {
+    this.$store.commit('SET_HEADER_THEME', 'light')
   }
 }
 </script>
