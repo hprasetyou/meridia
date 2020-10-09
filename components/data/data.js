@@ -257,16 +257,56 @@ export default {
         ]
       },
       {
-        title: 'Photo Product',
-        description: 'Haha Coffee - a Coffee shop',
-        img: 'pages/works-photo-1.jpg',
-        link: ''
-      },
-      {
-        title: 'Photo Product',
-        description: 'Hoho Coffee - a Coffee shop',
-        img: 'pages/works-photo-1.jpg',
-        link: ''
+        slug: 'wedding-wooden',
+        type: 'photo-gallery',
+        title: 'Photo Gallery',
+        description: 'Wooden Photo Gallery',
+        img: 'pages/projects/wooden-photo.jpg',
+        longDescription: 'Quoi de mieux que de pouvoir découvrir ses produits préférés sous tous les angles ! Modélisés en webGL, nous offrons aux futurs clients de Wedze l’opportunité de découvrir les masques en détail mais aussi de trouver le casque adéquat pour compléter leur achat. Notre volonté était ici de proposer un outil ergonomiquement simple et   novateur tout en privilégiant l’aspect chaleureux et technique que véhicule la marque.',
+        skills: [
+          'Development',
+          'UI/UX',
+          'Photography'
+        ],
+        gallery: [
+          {
+            title: '',
+            img: 'pages/projects/wedding-album/1.jpg',
+            attr: {
+              width: '5/12',
+              left: 16,
+              top: 20,
+              zIndex: 2
+            }
+          },
+          {
+            title: '',
+            img: 'pages/projects/wedding-album/2.jpg',
+            attr: {
+              width: '4/12',
+              left: 24,
+              top: 8,
+              zIndex: 3
+            }
+          },
+          {
+            title: '',
+            img: 'pages/projects/wedding-album/3.jpg',
+            attr: {
+              left: 8,
+              width: '1/3'
+            }
+          },
+          {
+            title: '',
+            img: 'pages/projects/wedding-album/4.jpg',
+            attr: {
+              left: 16,
+              width: '7/12'
+            }
+          }
+        ],
+        links: []
       }
     ]
   },

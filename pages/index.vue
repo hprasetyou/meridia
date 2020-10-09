@@ -61,6 +61,9 @@ export default {
         return item
       })
     }
+  },
+  mounted () {
+    this.$store.commit('SET_HEADER_THEME', 'dark')
   }
 }
 </script>

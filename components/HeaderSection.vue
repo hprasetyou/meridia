@@ -1,29 +1,25 @@
 <template>
   <div id="header">
-    <div :class="`nav-wrapper flex z-50 bg-gray-900 border-b border-gray-900 fixed md:relative top-0 inset-x-0 z-100 ${height} items-center`">
+    <div :class="`nav-wrapper flex z-50 ${ bgColor } fixed md:relative top-0 inset-x-0 z-100 h-20 items-center`">
       <div class="w-full container relative mx-auto">
         <div class="flex items-center">
           <div class="lg:w-1/4 xl:w-1/5">
             <div class="flex items-center">
               <nuxt-link class="block lg:mr-4" to="/">
-                <logo class="h-10" />
+                <logo :class="`${textColor} h-10`" />
               </nuxt-link>
             </div>
           </div>
           <div class="ml-auto">
             <div class="nav-toggle block md:hidden px-3" @click="showNav = !showNav">
-              <span class="block bg-white my-2" />
-              <span class="my-2" />
-              <span class="block bg-white my-2" />
-              <span class="my-2" />
-              <span class="block bg-white my-2" />
+              <span v-for="i in 5" :key="i" :class="`${ (i%2 != 0) ? mobileNavToggleColor : ''} block my-1`" />
             </div>
-            <div :class="`nav-content ${showNav ? 'active' : ''} fixed md:static bg-gray-900 pt-8 md:pt-0 w-full`">
+            <div :class="`nav-content ${showNav ? 'active' : ''} fixed md:static ${ bgColor } pt-8 md:pt-0 w-full`">
               <div class="nav-toggle--close block md:hidden px-3" @click="showNav = false">
                 <span class="block bg-white" />
                 <span class="block bg-white" />
               </div>
-              <ul id="main-menu" class="text-white flex flex-col md:flex-row font-light">
+              <ul id="main-menu" :class="`${textColor} flex flex-col md:flex-row font-light`">
                 <li v-for="(item, i) in menu" :key="i">
                   <nuxt-link :to="item.link">
                     {{ item.text }}
@@ -58,6 +54,17 @@ export default {
   data () {
     return {
       showNav: false
+    }
+  },
+  computed: {
+    bgColor () {
+      return this.$store.state.headerTheme === 'dark' ? 'bg-gray-900' : 'bg-white'
+    },
+    textColor () {
+      return this.$store.state.headerTheme === 'dark' ? 'text-white' : 'text-gray-900'
+    },
+    mobileNavToggleColor () {
+      return this.$store.state.headerTheme === 'dark' ? 'bg-white' : 'bg-gray-900'
     }
   }
 }

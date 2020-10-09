@@ -60,6 +60,7 @@ export default {
   },
   mounted () {
     this.currentProject = this.lookUpProject(this.$route.params.slug)
+    this.$store.commit('SET_HEADER_THEME', 'light')
     if (!this.currentProject) {
       this.$emit('error', 404)
     }

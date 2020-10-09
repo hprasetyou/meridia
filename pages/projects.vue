@@ -15,6 +15,9 @@ export default {
     return {
       services: data.projects
     }
+  },
+  mounted () {
+    this.$store.commit('SET_HEADER_THEME', 'light')
   }
 }
 </script>
