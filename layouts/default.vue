@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header-section :height="headerHeight" :menu="menu" />
+    <header-section ref="headerMenu" :height="headerHeight" :menu="menu" />
     <div class="page container mx-auto">
       <Nuxt v-if="!error" @error="onError" />
       <error v-else :title="error == 404 ? 'Page Not Found' : 'An Error has Occured'" />
@@ -64,6 +64,11 @@ export default {
   computed: {
     headerHeight () {
       return this.pageYOffset > 100 ? 'h-20' : 'h-24'
+    }
+  },
+  watch: {
+    $route (value) {
+      this.$refs.headerMenu.hideNav()
     }
   },
   beforeMount () {

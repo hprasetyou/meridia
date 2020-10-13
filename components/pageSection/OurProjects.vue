@@ -12,8 +12,8 @@
     </div>
     <div :class="`${show ? 'opacity-100':'opacity-0'} transform transition duration-300 container mx-auto mt-8`">
       <template v-if="currentService">
-        <div v-if="showAsGrid" class="flex flex-wrap -mx-4 my-16">
-          <div v-for="(item, i) in currentService.works" :key="i" class="w-1/3 px-4 mb-8">
+        <div v-if="showAsGrid" class="flex flex-wrap -mx-2 md:-mx-4 my-16">
+          <div v-for="(item, i) in currentService.works" :key="i" class="w-1/3 px-2 md:px-4 mb-4 md:mb-8">
             <nuxt-link :to="`/project/${item.slug}`">
               <img-card :img="item.img" :title="item.title" :description="item.description" />
             </nuxt-link>

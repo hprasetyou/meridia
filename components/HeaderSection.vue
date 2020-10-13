@@ -1,6 +1,6 @@
 <template>
   <div id="header">
-    <div :class="`nav-wrapper flex z-50 ${ bgColor } fixed md:relative top-0 inset-x-0 z-100 h-20 items-center`">
+    <div :class="`nav-wrapper flex z-50 ${ bgColor } fixed md:relative top-0 inset-x-0 z-100 h-20 items-center px-3`">
       <div class="w-full container relative mx-auto">
         <div class="flex items-center">
           <div class="lg:w-1/4 xl:w-1/5">
@@ -20,7 +20,7 @@
               </div>
               <ul id="main-menu" :class="`${textColor} flex flex-col md:flex-row font-light`">
                 <li v-for="(item, i) in menu" :key="i">
-                  <nuxt-link :to="item.link">
+                  <nuxt-link :to="item.link" @click="showNav = false">
                     {{ item.text }}
                   </nuxt-link>
                 </li>
@@ -64,6 +64,11 @@ export default {
     },
     mobileNavToggleColor () {
       return this.$store.state.headerTheme === 'dark' ? 'bg-white' : 'bg-gray-900'
+    }
+  },
+  methods: {
+    hideNav () {
+      this.showNav = false
     }
   }
 }

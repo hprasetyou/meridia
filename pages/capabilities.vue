@@ -1,5 +1,5 @@
 <template>
-  <our-service :services="services" />
+  <our-service class="my-12 md:my-0" :services="services" />
 </template>
 <script>
 import ourService from '../components/pageSection/OurService'

@@ -21,7 +21,7 @@
               <logo-short />
             </div>
             <div class="md:w-1/4" />
-            <div class="w-1/6">
+            <div class="w-1/6 py-6 md:py-0">
               <ul id="footer-menu">
                 <li v-for="(item, i) in menu" :key="i">
                   <nuxt-link :to="item.link">
@@ -37,7 +37,7 @@
                 </li>
               </ul>
             </div>
-            <div class="md:w-1/4 md:pt-6">
+            <div class="md:w-1/4 pt-6">
               <p>
                 <span class="mr-4">T:</span>
                 <a href="tel:081232080801">081 232 080801</a>

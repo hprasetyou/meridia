@@ -22,7 +22,7 @@
       </div>
     </page-section>
     <our-service id="our-service" :services="services" />
-    <our-projects class="bg-gray-900 md:py-32 py-8 xl:py-48 text-white" :services="projects" :selected="4" />
+    <our-projects class="bg-gray-900 md:py-32 py-8 xl:py-48 px-4 md:px-0 text-white" :services="projects" :selected="4" />
     <page-section id="contact" class="flex flex-col h-screen section-fullwidth">
       <div class="container mx-auto h-full">
         <div class="flex h-full">
