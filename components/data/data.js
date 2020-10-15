@@ -164,6 +164,7 @@ export default {
         title: 'HeHe Coffee',
         description: 'a Coffee shop',
         img: 'pages/works-photo-1.jpg',
+        imgSlider: 'pages/works-photo-1-slider.jpg',
         longDescription: 'Quoi de mieux que de pouvoir découvrir ses produits préférés sous tous les angles ! Modélisés en webGL, nous offrons aux futurs clients de Wedze l’opportunité de découvrir les masques en détail mais aussi de trouver le casque adéquat pour compléter leur achat. Notre volonté était ici de proposer un outil ergonomiquement simple et   novateur tout en privilégiant l’aspect chaleureux et technique que véhicule la marque.',
         skills: [
           'Development',
@@ -262,6 +263,7 @@ export default {
         title: 'Photo Gallery',
         description: 'Wooden Photo Gallery',
         img: 'pages/projects/wooden-photo.jpg',
+        imgSlider: 'pages/projects/wooden-photo-slider.jpg',
         longDescription: 'Quoi de mieux que de pouvoir découvrir ses produits préférés sous tous les angles ! Modélisés en webGL, nous offrons aux futurs clients de Wedze l’opportunité de découvrir les masques en détail mais aussi de trouver le casque adéquat pour compléter leur achat. Notre volonté était ici de proposer un outil ergonomiquement simple et   novateur tout en privilégiant l’aspect chaleureux et technique que véhicule la marque.',
         skills: [
           'Development',

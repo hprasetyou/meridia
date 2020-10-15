@@ -24,7 +24,7 @@
             <slide v-for="(item, i) in currentService.works" :key="i">
               <div class="pr-8 font-extra-light" @click="carouselIndex = i">
                 <div class="our-work--img my-8">
-                  <img :src="require('~/static/img/' + item.img)" class="w-full" alt="">
+                  <img :src="require('~/static/img/' + (item.imgSlider ? item.imgSlider : item.img))" class="w-full" alt="">
                 </div>
                 <h3 class="text-4xl mb-4">
                   {{ currentService.title }}
