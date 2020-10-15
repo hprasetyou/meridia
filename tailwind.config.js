@@ -60,6 +60,7 @@ module.exports = {
 
     // These options are passed through directly to PurgeCSS
     options: {
+      whitelist: ['pb-3', 'md:pb-0'],
       whitelistPatterns: [/^md:m/, /^md:-m/, /^md:z/, /^md:w/]
     }
   }
