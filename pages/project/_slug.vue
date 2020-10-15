@@ -1,10 +1,10 @@
 <template>
-  <div>
-    <div class="page-title my-8 lg:mt-16 leading-tight">
-      <h1 class="font-extra-light text-6xl">
+  <div class="px-3">
+    <div class="page-title my-8 mt-32 lg:mt-16 leading-tight">
+      <h1 class="font-extra-light text-3xl lg:text-6xl">
         {{ currentProject.title }} -
       </h1>
-      <h1 class="font-extra-light text-6xl">
+      <h1 class="font-extra-light text-3xl lg:text-6xl">
         {{ currentProject.description }}
       </h1>
     </div>

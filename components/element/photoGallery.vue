@@ -37,7 +37,9 @@ export default {
   methods: {
     generateClass (attr) {
       const cClass = {
-        flex: true
+        flex: true,
+        'pb-3': true,
+        'md:pb-0': true
       }
       for (const key in attr) {
         switch (key) {
