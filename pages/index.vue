@@ -13,7 +13,7 @@
               <h1 class="block mb-8 font-extra-light break-word leading-none text-3xl">
                 Design and development for brands.
               </h1>
-              <primary-button href="#">
+              <primary-button href="#contact">
                 Lets talk
               </primary-button>
             </div>
