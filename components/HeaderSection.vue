@@ -1,6 +1,10 @@
 <template>
   <div id="header">
-    <div :class="`nav-wrapper flex z-50 ${ bgColor } fixed md:relative top-0 inset-x-0 z-100 h-20 items-center px-3`">
+    <div
+      :style="{
+        top: fadeUp ? '-80px': '0'
+      }"
+      :class="`nav-wrapper flex z-50 ${ bgColor } fixed md:relative inset-x-0 z-100 h-20 items-center px-3`">
       <div class="w-full container relative mx-auto">
         <div class="flex items-center">
           <div class="lg:w-1/4 xl:w-1/5">
@@ -48,6 +52,10 @@ export default {
       default () {
         return []
       }
+    },
+    fadeUp: {
+      type: Boolean,
+      default: false
     }
   },
   data () {
@@ -91,18 +99,26 @@ export default {
       position: absolute;
       top: 50%;
       left: 50%;
+      transform: translate(-50%,-50%);
+      transition: all .5s ease-in-out;
+      & + span{
+        transform: translate(-50%,-50%);
+      }
+    }
+}
+.active .nav-toggle--close{
+    &  > span{
       transform: translate(-50%,-50%) rotate(45deg);
       & + span{
         transform: translate(-50%,-50%) rotate(-45deg);
       }
     }
 }
-
 .nav-content{
   left: -100%;
   top: 0;
   bottom: 0;
-  transition: all .2s ease-in-out;
+  transition: all .3s ease-in-out;
   &.active{
     left: 0;
   }
@@ -113,6 +129,6 @@ export default {
   }
 }
 #header .nav-wrapper{
-  transition: all .2s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 </style>

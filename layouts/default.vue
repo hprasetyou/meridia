@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header-section ref="headerMenu" :height="headerHeight" :menu="menu" />
+    <header-section ref="headerMenu" :height="headerHeight" :fade-up="fadeUp" :menu="menu" />
     <div class="page container mx-auto">
       <Nuxt v-if="!error" @error="onError" />
       <error v-else :title="error == 404 ? 'Page Not Found' : 'An Error has Occured'" />
@@ -23,6 +23,8 @@ export default {
   data () {
     return {
       pageYOffset: 0,
+      recordingScroll: true,
+      lastScroll: 0,
       error: false,
       menu: [
         {
@@ -64,6 +66,12 @@ export default {
   computed: {
     headerHeight () {
       return this.pageYOffset > 100 ? 'h-20' : 'h-24'
+    },
+    fadeUp () {
+      if (this.pageYOffset > 100) {
+        return (this.pageYOffset >= this.lastScroll)
+      }
+      return false
     }
   },
   watch: {
@@ -86,6 +94,13 @@ export default {
     },
     handleScroll () {
       // Your scroll handling here
+      if (this.recordingScroll) {
+        this.recordingScroll = false
+        this.lastScroll = window.pageYOffset
+        setTimeout(() => {
+          this.recordingScroll = true
+        }, 500)
+      }
       this.pageYOffset = window.pageYOffset
     }
   }

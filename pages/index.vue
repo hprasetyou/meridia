@@ -3,14 +3,14 @@
     <page-section class="section-fullwidth bg-gray-900 min-h-0 md:-mt-32 md:min-h-screen xl:h-screen">
       <div class="container mx-auto">
         <div class="flex banner flex-row mb-4 h-full">
-          <div class="w-1/2 px-4 flex">
+          <div class="w-5/12 md:w-1/2 px-4 flex">
             <div class="banner--img my-auto mt-40 ml-auto">
               <img src="~/static/img/iphone.png">
             </div>
           </div>
-          <div class="w-1/2 text-white flex">
+          <div class="w-7/12 md:w-1/2 text-white flex">
             <div class="banner--text my-auto xl:pb-48">
-              <h1 class="block mb-8 font-extra-light leading-none text-3xl">
+              <h1 class="block mb-8 font-extra-light break-word leading-none text-3xl">
                 Design and development for brands.
               </h1>
               <primary-button href="#">
