@@ -10,7 +10,7 @@
           <div class="lg:w-1/4 xl:w-1/5">
             <div class="flex items-center">
               <nuxt-link class="block lg:mr-4" to="/">
-                <logo :class="`${textColor} h-10`" />
+                <logo :class="`${textColor} ${ showNav? 'opacity-0': 'opacity-100' } transition duration-500 ease-in-out h-10`" />
               </nuxt-link>
             </div>
           </div>
@@ -75,7 +75,7 @@ export default {
   methods: {
     toggleNav () {
       if (!this.showNav) {
-        this.navBlock = 'block'
+        this.navBlock = 'flex'
         setTimeout(() => { this.showNav = true }, 100)
       } else {
         this.showNav = false
@@ -118,14 +118,14 @@ export default {
   left: 0;
   display: none;
   opacity: 0;
-  top: 80px;
+  top: 70px;
   bottom: 0;
   transition: all .3s ease-in-out;
   &.active{
     opacity: 1;
   }
-  &.block{
-    display: block;
+  &.flex{
+    display: flex;
   }
   @media(min-width: 768px) {
     display: block;
@@ -153,6 +153,12 @@ export default {
     }
 }
 #main-menu{
+  text-align: center;
+  margin: auto;
+  margin-top: 35%;
+  @media(min-width: 768px) {
+    margin-top: 0;
+  }
   li{
      padding: 15px 20px;
   }
