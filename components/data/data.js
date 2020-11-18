@@ -1,12 +1,12 @@
 export default {
   projects: [{
     title: 'Web Design',
-    description: 'Code responsive, secure, and scalable products with time-tested technologies',
+    description: 'Web development process for creating a website that focuses on aesthetic factors like layout, user interface and other visual imagery in order to make the website more visually appealing and easy to use.',
     works: []
   },
   {
     title: 'Mobile App Design',
-    description: 'Code responsive, secure, and scalable products with time-tested technologies',
+    description: 'mobile applications that we will create to design and answer customer needs.  Although mobile applications have a wide variety of uses, what matters most is the need for optimal usability, accessibility, and the overall user experience.',
     works: [
       {
         slug: 'buper-mobile',
@@ -65,7 +65,7 @@ export default {
   },
   {
     title: 'Logo Design',
-    description: 'Code responsive, secure, and scalable products with time-tested technologies',
+    description: 'We make logo designs to meet customer needs as one of the identities of a product that is owned.',
     works: [
       {
         slug: 're-logo',
@@ -151,12 +151,12 @@ export default {
   },
   {
     title: 'Social Media',
-    description: 'Code responsive, secure, and scalable products with time-tested technologies',
+    description: 'What you need to know about using social media for your business is very important to today\'s business trends.  where users can easily participate, interact, share, and create content helping to connect customers with business people to get the goals they want.',
     works: []
   },
   {
     title: 'Photo Product',
-    description: 'Code responsive, secure, and scalable products with time-tested technologies',
+    description: 'We help customers wholeheartedly with the aim of answering customer problems and desires.  with us, the needs of social media are met, such as the design of product catalog photos for activities in the world of social media.',
     works: [
       {
         slug: 'hehe-coffee',
@@ -311,10 +311,5 @@ export default {
         links: []
       }
     ]
-  },
-  {
-    title: 'Visual Identity Design',
-    description: 'Code responsive, secure, and scalable products with time-tested technologies',
-    works: []
   }]
 }

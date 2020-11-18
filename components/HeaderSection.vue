@@ -2,7 +2,7 @@
   <div id="header">
     <div
       :style="{
-        top: fadeUp ? '-80px': '0'
+        top: (fadeUp && !showNav) ? '-80px': '0'
       }"
       :class="`nav-wrapper flex z-50 ${ bgColor } fixed md:relative inset-x-0 z-100 h-20 items-center px-3`">
       <div class="w-full container relative mx-auto">
@@ -15,20 +15,17 @@
             </div>
           </div>
           <div class="ml-auto">
-            <div class="nav-toggle block md:hidden px-3" @click="showNav = !showNav">
-              <span v-for="i in 5" :key="i" :class="`${ (i%2 != 0) ? mobileNavToggleColor : ''} block my-1`" />
-            </div>
-            <div :class="`nav-content ${showNav ? 'active' : ''} fixed md:static ${ bgColor } pt-8 md:pt-0 w-full`">
-              <div class="nav-toggle--close block md:hidden px-3" @click="showNav = false">
-                <span v-for="i in 2" :key="i" :class="`block ${mobileNavToggleColor}`" />
-              </div>
+            <div :class="`nav-content ${showNav ? 'active' : ''} ${ navBlock } fixed md:static ${ bgColor } pt-8 md:pt-0 w-full`">
               <ul id="main-menu" :class="`${textColor} flex flex-col md:flex-row font-light`">
                 <li v-for="(item, i) in menu" :key="i">
-                  <nuxt-link :to="item.link" @click="showNav = false">
+                  <nuxt-link :to="item.link" @click="toggleNav">
                     {{ item.text }}
                   </nuxt-link>
                 </li>
               </ul>
+            </div>
+            <div class="nav-toggle block md:hidden px-3" @click="toggleNav">
+              <span v-for="i in 3" :key="i" :class="`${ mobileNavToggleColor } block`" />
             </div>
           </div>
         </div>
@@ -60,7 +57,8 @@ export default {
   },
   data () {
     return {
-      showNav: false
+      showNav: false,
+      navBlock: ''
     }
   },
   computed: {
@@ -75,53 +73,83 @@ export default {
     }
   },
   methods: {
+    toggleNav () {
+      if (!this.showNav) {
+        this.navBlock = 'block'
+        setTimeout(() => { this.showNav = true }, 100)
+      } else {
+        this.showNav = false
+        setTimeout(() => { this.navBlock = '' }, 500)
+      }
+    },
     hideNav () {
       this.showNav = false
+      setTimeout(() => { this.navBlock = '' }, 500)
     }
   }
 }
 </script>
 <style lang="scss">
-.nav-toggle--close,
 .nav-toggle{
+  position: relative;
+  height: 20px;
+  width: 30px;
   & > span{
+    &:first-child{
+      top: 0;
+    }
+    & + span:not(:last-child){
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 1;
+    }
+    &:last-child{
+      bottom: 0;
+    }
+    position: absolute;
     height: 2px;
     width: 30px;
+    left: 0;
+    transition: all .3s ease-in-out;
   }
 }
-.nav-toggle--close{
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    width: 40px;
-    height: 40px;
-    &  > span{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      transition: all .5s ease-in-out;
-      & + span{
-        transform: translate(-50%,-50%);
-      }
-    }
-}
-.active .nav-toggle--close{
-    &  > span{
-      transform: translate(-50%,-50%) rotate(45deg);
-      & + span{
-        transform: translate(-50%,-50%) rotate(-45deg);
-      }
-    }
-}
+
 .nav-content{
-  left: -100%;
-  top: 0;
+  left: 0;
+  display: none;
+  opacity: 0;
+  top: 80px;
   bottom: 0;
   transition: all .3s ease-in-out;
   &.active{
-    left: 0;
+    opacity: 1;
   }
+  &.block{
+    display: block;
+  }
+  @media(min-width: 768px) {
+    display: block;
+  }
+}
+
+.nav-content.active + .nav-toggle{
+    &  > span{
+
+      & + span:not(:last-child){
+        opacity: 0;
+      }
+      &:first-child,
+      &:last-child{
+        top: 50%;
+        left: 50%;
+      }
+      &:first-child{
+        transform: translate(-50%,-50%) rotate(45deg);
+      }
+      &:last-child{
+        transform: translate(-50%,-50%) rotate(-45deg);
+      }
+    }
 }
 #main-menu{
   li{

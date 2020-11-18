@@ -5,7 +5,7 @@
         What we do.
       </h2>
       <div class="flex flex-wrap mb-4 md:-mx-3">
-        <div v-for="(service, i) in services" :key="i" class="w-1/2 md:w-1/3 mb-6 px-3">
+        <div v-for="(service, i) in services" :key="i" class="w-full md:w-1/3 mb-6 px-3">
           <div class="font-light">
             <span :class="`mr-service-icon ${'service-' + i} mb-3`" />
             <h4 class="uppercase  text-lg tracking-widest mb-3">

@@ -16,12 +16,12 @@
           </primary-button>
         </div>
         <div class="footer-nav my-auto font-light leading-8">
-          <div class="flex flex-col md:flex-row">
-            <div class="w-1/4">
+          <div class="flex flex-wrap flex-row">
+            <div class="w-full md:w-1/4">
               <logo-short />
             </div>
             <div class="md:w-1/4" />
-            <div class="w-1/6 py-6 md:py-0">
+            <div class="md:w-1/6 w-1/2 py-6 md:py-0">
               <ul id="footer-menu">
                 <li v-for="(item, i) in menu" :key="i">
                   <nuxt-link :to="item.link">
@@ -30,7 +30,7 @@
                 </li>
               </ul>
             </div>
-            <div class="md:w-1/6">
+            <div class="md:w-1/6 py-6 w-1/2">
               <ul>
                 <li v-for="(item, i) in social" :key="i">
                   <a :href="item.link" :class="`footer-social ${item.type}`">{{ item.text }}</a>
