@@ -20,24 +20,26 @@
           </div>
         </div>
         <client-only v-else>
-          <carousel :navigate-to="carouselIndex" :per-page="1" :loop="true" :pagination-enabled="false">
-            <slide v-for="(item, i) in currentService.works" :key="i">
-              <div class="xl:pr-8 font-extra-light" @click="carouselIndex = i">
-                <div class="our-work--img my-8">
-                  <img :src="require('~/static/img/' + (item.imgSlider ? item.imgSlider : item.img))" class="w-full" alt="">
+          <div style="max-width: 600px">
+            <carousel :navigate-to="carouselIndex" :per-page="1" :loop="true" :pagination-enabled="false">
+              <slide v-for="(item, i) in currentService.works" :key="i">
+                <div class="xl:pr-8 font-extra-light" @click="carouselIndex = i">
+                  <div class="our-work--img my-8">
+                    <img :src="require('~/static/img/' + (item.imgSlider ? item.imgSlider : item.img))" class="w-full" alt="">
+                  </div>
+                  <h3 class="text-4xl mb-4">
+                    {{ currentService.title }}
+                  </h3>
+                  <p class="mb-3">
+                    {{ item.title }} - {{ item.description }}
+                  </p>
+                  <nuxt-link class="underline hover:text-indigo-600" :to="`/project/${item.slug}`">
+                    See More
+                  </nuxt-link>
                 </div>
-                <h3 class="text-4xl mb-4">
-                  {{ currentService.title }}
-                </h3>
-                <p class="mb-3">
-                  {{ item.title }} - {{ item.description }}
-                </p>
-                <nuxt-link class="underline hover:text-indigo-600" :to="`/project/${item.slug}`">
-                  See More
-                </nuxt-link>
-              </div>
-            </slide>
-          </carousel>
+              </slide>
+            </carousel>
+          </div>
         </client-only>
       </template>
     </div>
