@@ -476,8 +476,6 @@ export default {
         imgSlider: 'pages/projects/photo/5-f.jpg',
         longDescription: 'Quoi de mieux que de pouvoir découvrir ses produits préférés sous tous les angles ! Modélisés en webGL, nous offrons aux futurs clients de Wedze l’opportunité de découvrir les masques en détail mais aussi de trouver le casque adéquat pour compléter leur achat. Notre volonté était ici de proposer un outil ergonomiquement simple et   novateur tout en privilégiant l’aspect chaleureux et technique que véhicule la marque.',
         skills: [
-          'Development',
-          'UI/UX',
           'Photography'
         ],
         gallery: [
@@ -552,10 +550,8 @@ export default {
         description: 'from Indonesia',
         img: 'pages/projects/photo/8.jpg',
         imgSlider: 'pages/projects/photo/8-f.jpg',
-        longDescription: 'Quoi de mieux que de pouvoir découvrir ses produits préférés sous tous les angles ! Modélisés en webGL, nous offrons aux futurs clients de Wedze l’opportunité de découvrir les masques en détail mais aussi de trouver le casque adéquat pour compléter leur achat. Notre volonté était ici de proposer un outil ergonomiquement simple et   novateur tout en privilégiant l’aspect chaleureux et technique que véhicule la marque.',
+        longDescription: 'Arazki Bags is a center for various bags that offers various types of bags with unique motifs, as well as very affordable prices for wholesale and retail purchases.',
         skills: [
-          'Development',
-          'UI/UX',
           'Photography'
         ],
         gallery: [
@@ -598,6 +594,10 @@ export default {
           }
         ],
         links: [
+          {
+            text: '@arazki.bags',
+            url: 'https://instagram.com/arazki.bags'
+          }
         ]
       }
     ]
