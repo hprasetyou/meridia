@@ -167,8 +167,6 @@ export default {
         imgSlider: 'pages/projects/photo/1-f.jpg',
         longDescription: 'Omah Treatment is a beauty clinic that carries the concept of "three treatments", namely facial treatment, make up and brow art, which synergizes the use of modern technology at an affordable price.',
         skills: [
-          'Development',
-          'UI/UX',
           'Photography'
         ],
         gallery: [
@@ -264,23 +262,90 @@ export default {
         description: 'from Indonesia',
         img: 'pages/projects/photo/2.jpg',
         imgSlider: 'pages/projects/photo/2-f.jpg',
-        longDescription: 'Quoi de mieux que de pouvoir découvrir ses produits préférés sous tous les angles ! Modélisés en webGL, nous offrons aux futurs clients de Wedze l’opportunité de découvrir les masques en détail mais aussi de trouver le casque adéquat pour compléter leur achat. Notre volonté était ici de proposer un outil ergonomiquement simple et   novateur tout en privilégiant l’aspect chaleureux et technique que véhicule la marque.',
+        longDescription: 'Awan Biru is a coffee shop in Demak, Indonesia that offers the experience of enjoying a cup of coffee with shades of blue clouds, making everyone happy with the quality of good coffee beans.⁣',
         skills: [
-          'Development',
-          'UI/UX',
           'Photography'
         ],
         gallery: [
           {
             title: '',
-            img: 'pages/projects/photo/2.jpg',
+            img: 'pages/projects/photo/awanbiru/1.jpg',
             attr: {
-              width: 'full',
+              width: '1/2',
+              left: 8,
+              top: 16,
               zIndex: 2
+            }
+          },
+          {
+            title: '',
+            img: 'pages/projects/photo/awanbiru/2.jpg',
+            attr: {
+              width: '1/4',
+              left: 16,
+              top: 8,
+              zIndex: 3
+            }
+          },
+          {
+            title: '',
+            img: 'pages/projects/photo/awanbiru/3.jpg',
+            attr: {
+              width: '1/6',
+              bottom: 8,
+              left: 8,
+              zIndex: 4
+            }
+          },
+          {
+            title: '',
+            img: 'pages/projects/photo/awanbiru/4.jpg',
+            attr: {
+              width: '1/3'
+            }
+          },
+          {
+            title: '',
+            img: 'pages/projects/photo/awanbiru/5.jpg',
+            attr: {
+              left: 8,
+              width: '7/12',
+              zIndex: 1
+            }
+          },
+          {
+            title: '',
+            img: 'pages/projects/photo/awanbiru/6.jpg',
+            attr: {
+              width: '1/3',
+              bottom: 32,
+              left: 8
+            }
+          },
+          {
+            title: '',
+            img: 'pages/projects/photo/awanbiru/7.jpg',
+            attr: {
+              width: '1/3',
+              bottom: 40,
+              right: 16,
+              zIndex: 2
+            }
+          },
+          {
+            title: '',
+            img: 'pages/projects/photo/awanbiru/8.jpg',
+            attr: {
+              width: '1/3',
+              bottom: 32
             }
           }
         ],
         links: [
+          {
+            text: '@awanbiru.coffee',
+            url: 'https://instagram.com/awanbiru.coffee'
+          }
         ]
       },
       {
@@ -316,23 +381,90 @@ export default {
         description: 'from Indonesia',
         img: 'pages/projects/photo/4.jpg',
         imgSlider: 'pages/projects/photo/4-f.jpg',
-        longDescription: 'Quoi de mieux que de pouvoir découvrir ses produits préférés sous tous les angles ! Modélisés en webGL, nous offrons aux futurs clients de Wedze l’opportunité de découvrir les masques en détail mais aussi de trouver le casque adéquat pour compléter leur achat. Notre volonté était ici de proposer un outil ergonomiquement simple et   novateur tout en privilégiant l’aspect chaleureux et technique que véhicule la marque.',
+        longDescription: 'Sidji Coffee is a coffee shop in Kudus, Indonesia that offers the experience of enjoying a cup of coffee with the nuances of street & nature views.',
         skills: [
-          'Development',
-          'UI/UX',
           'Photography'
         ],
         gallery: [
           {
             title: '',
-            img: 'pages/projects/photo/4.jpg',
+            img: 'pages/projects/photo/sidji/1.jpg',
             attr: {
-              width: 'full',
+              width: '1/2',
+              left: 8,
+              top: 16,
               zIndex: 2
+            }
+          },
+          {
+            title: '',
+            img: 'pages/projects/photo/sidji/2.jpg',
+            attr: {
+              width: '1/4',
+              left: 16,
+              top: 8,
+              zIndex: 3
+            }
+          },
+          {
+            title: '',
+            img: 'pages/projects/photo/sidji/3.jpg',
+            attr: {
+              width: '1/6',
+              bottom: 8,
+              left: 8,
+              zIndex: 4
+            }
+          },
+          {
+            title: '',
+            img: 'pages/projects/photo/sidji/4.jpg',
+            attr: {
+              width: '1/3'
+            }
+          },
+          {
+            title: '',
+            img: 'pages/projects/photo/sidji/5.jpg',
+            attr: {
+              left: 8,
+              width: '7/12',
+              zIndex: 1
+            }
+          },
+          {
+            title: '',
+            img: 'pages/projects/photo/sidji/6.jpg',
+            attr: {
+              width: '1/3',
+              bottom: 32,
+              left: 8
+            }
+          },
+          {
+            title: '',
+            img: 'pages/projects/photo/sidji/7.jpg',
+            attr: {
+              width: '1/3',
+              bottom: 40,
+              right: 16,
+              zIndex: 2
+            }
+          },
+          {
+            title: '',
+            img: 'pages/projects/photo/sidji/8.jpg',
+            attr: {
+              width: '1/3',
+              bottom: 32
             }
           }
         ],
         links: [
+          {
+            text: '@sidjicoffeespace',
+            url: 'https://instagram.com/sidjicoffeespace'
+          }
         ]
       },
       {
