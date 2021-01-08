@@ -48,7 +48,7 @@ export default {
         {
           text: 'Instagram',
           type: 'instagram',
-          link: 'https://www.instagram.com/meridia.studio/'
+          link: 'https://www.instagram.com/meridiastudio/'
         },
         {
           text: 'Behance',
