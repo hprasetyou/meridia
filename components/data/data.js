@@ -561,10 +561,39 @@ export default {
         gallery: [
           {
             title: '',
-            img: 'pages/projects/photo/8.jpg',
+            img: 'pages/projects/photo/arazki/1.jpg',
             attr: {
-              width: 'full',
+              width: '5/12',
+              left: 16,
               zIndex: 2
+            }
+          },
+          {
+            title: '',
+            img: 'pages/projects/photo/arazki/2.jpg',
+            attr: {
+              width: '1/3',
+              left: 20,
+              zIndex: 2
+            }
+          },
+          {
+            title: '',
+            img: 'pages/projects/photo/arazki/3.jpg',
+            attr: {
+              width: '1/3',
+              bottom: 8,
+              zIndex: 1
+            }
+          },
+          {
+            title: '',
+            img: 'pages/projects/photo/arazki/4.jpg',
+            attr: {
+              width: '7/12',
+              left: 6,
+              bottom: 8,
+              zIndex: 1
             }
           }
         ],
