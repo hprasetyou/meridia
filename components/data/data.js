@@ -165,7 +165,7 @@ export default {
         description: 'from Indonesia',
         img: 'pages/projects/photo/1.jpg',
         imgSlider: 'pages/projects/photo/1-f.jpg',
-        longDescription: 'Quoi de mieux que de pouvoir découvrir ses produits préférés sous tous les angles ! Modélisés en webGL, nous offrons aux futurs clients de Wedze l’opportunité de découvrir les masques en détail mais aussi de trouver le casque adéquat pour compléter leur achat. Notre volonté était ici de proposer un outil ergonomiquement simple et   novateur tout en privilégiant l’aspect chaleureux et technique que véhicule la marque.',
+        longDescription: 'Omah Treatment is a beauty clinic that carries the concept of "three treatments", namely facial treatment, make up and brow art, which synergizes the use of modern technology at an affordable price.',
         skills: [
           'Development',
           'UI/UX',
@@ -174,10 +174,75 @@ export default {
         gallery: [
           {
             title: '',
-            img: 'pages/projects/photo/1.jpg',
+            img: 'pages/projects/photo/omahtreatment/1.jpg',
             attr: {
-              width: 'full',
+              width: '1/2',
+              left: 8,
+              top: 16,
               zIndex: 2
+            }
+          },
+          {
+            title: '',
+            img: 'pages/projects/photo/omahtreatment/2.jpg',
+            attr: {
+              width: '1/4',
+              left: 16,
+              top: 8,
+              zIndex: 3
+            }
+          },
+          {
+            title: '',
+            img: 'pages/projects/photo/omahtreatment/3.jpg',
+            attr: {
+              width: '1/6',
+              bottom: 8,
+              left: 8,
+              zIndex: 4
+            }
+          },
+          {
+            title: '',
+            img: 'pages/projects/photo/omahtreatment/4.jpg',
+            attr: {
+              width: '1/3'
+            }
+          },
+          {
+            title: '',
+            img: 'pages/projects/photo/omahtreatment/5.jpg',
+            attr: {
+              left: 8,
+              width: '7/12',
+              zIndex: 1
+            }
+          },
+          {
+            title: '',
+            img: 'pages/projects/photo/omahtreatment/6.jpg',
+            attr: {
+              width: '1/3',
+              bottom: 32,
+              left: 8
+            }
+          },
+          {
+            title: '',
+            img: 'pages/projects/photo/omahtreatment/7.jpg',
+            attr: {
+              width: '1/3',
+              bottom: 40,
+              right: 16,
+              zIndex: 2
+            }
+          },
+          {
+            title: '',
+            img: 'pages/projects/photo/omahtreatment/8.jpg',
+            attr: {
+              width: '1/3',
+              bottom: 32
             }
           }
         ],
@@ -185,6 +250,10 @@ export default {
           {
             text: 'omahtreatment.com',
             url: 'http://omahtreatment.com'
+          },
+          {
+            text: '@omahtreatment',
+            url: 'https://instagram.com/omahtreatment'
           }
         ]
       },
