@@ -159,12 +159,12 @@ export default {
     description: 'We help customers wholeheartedly with the aim of answering customer problems and desires.  with us, the needs of social media are met, such as the design of product catalog photos for activities in the world of social media.',
     works: [
       {
-        slug: 'hehe-coffee',
+        slug: 'omah-treatment',
         type: 'photo-gallery',
-        title: 'HeHe Coffee',
-        description: 'a Coffee shop',
-        img: 'pages/works-photo-1.jpg',
-        imgSlider: 'pages/works-photo-1-slider.jpg',
+        title: 'Omah Treatment | Skin Care',
+        description: 'from Indonesia',
+        img: 'pages/projects/photo/1.jpg',
+        imgSlider: 'pages/projects/photo/1-f.jpg',
         longDescription: 'Quoi de mieux que de pouvoir découvrir ses produits préférés sous tous les angles ! Modélisés en webGL, nous offrons aux futurs clients de Wedze l’opportunité de découvrir les masques en détail mais aussi de trouver le casque adéquat pour compléter leur achat. Notre volonté était ici de proposer un outil ergonomiquement simple et   novateur tout en privilégiant l’aspect chaleureux et technique que véhicule la marque.',
         skills: [
           'Development',
@@ -174,96 +174,27 @@ export default {
         gallery: [
           {
             title: '',
-            img: 'pages/projects/hehe/1.jpg',
+            img: 'pages/projects/photo/1.jpg',
             attr: {
-              width: '1/2',
-              left: 8,
-              top: 16,
+              width: 'full',
               zIndex: 2
-            }
-          },
-          {
-            title: '',
-            img: 'pages/projects/hehe/2.jpg',
-            attr: {
-              width: '1/4',
-              left: 16,
-              top: 8,
-              zIndex: 3
-            }
-          },
-          {
-            title: '',
-            img: 'pages/projects/hehe/3.jpg',
-            attr: {
-              width: '1/6',
-              bottom: 8,
-              left: 8,
-              zIndex: 4
-            }
-          },
-          {
-            title: '',
-            img: 'pages/projects/hehe/4.jpg',
-            attr: {
-              width: '1/3'
-            }
-          },
-          {
-            title: '',
-            img: 'pages/projects/hehe/5.jpg',
-            attr: {
-              left: 8,
-              width: '7/12',
-              zIndex: 1
-            }
-          },
-          {
-            title: '',
-            img: 'pages/projects/hehe/6.jpg',
-            attr: {
-              width: '1/3',
-              bottom: 32,
-              left: 8
-            }
-          },
-          {
-            title: '',
-            img: 'pages/projects/hehe/7.jpg',
-            attr: {
-              width: '1/3',
-              bottom: 40,
-              right: 16,
-              zIndex: 2
-            }
-          },
-          {
-            title: '',
-            img: 'pages/projects/hehe/8.jpg',
-            attr: {
-              width: '1/3',
-              bottom: 32
             }
           }
         ],
         links: [
           {
-            text: '@hehecoffee',
-            url: ''
-          },
-          {
-            text: 'hehecoffee.com',
-            url: 'http://hehecoffee.com'
+            text: 'omahtreatment.com',
+            url: 'http://omahtreatment.com'
           }
         ]
       },
       {
-        slug: 'wedding-wooden',
+        slug: 'awan-biru',
         type: 'photo-gallery',
-        title: 'Photo Gallery',
-        description: 'Wooden Photo Gallery',
-        img: 'pages/projects/wooden-photo.jpg',
-        imgSlider: 'pages/projects/wooden-photo-slider.jpg',
+        title: 'Awan Biru | Coffee Shop',
+        description: 'from Indonesia',
+        img: 'pages/projects/photo/2.jpg',
+        imgSlider: 'pages/projects/photo/2-f.jpg',
         longDescription: 'Quoi de mieux que de pouvoir découvrir ses produits préférés sous tous les angles ! Modélisés en webGL, nous offrons aux futurs clients de Wedze l’opportunité de découvrir les masques en détail mais aussi de trouver le casque adéquat pour compléter leur achat. Notre volonté était ici de proposer un outil ergonomiquement simple et   novateur tout en privilégiant l’aspect chaleureux et technique que véhicule la marque.',
         skills: [
           'Development',
@@ -273,42 +204,171 @@ export default {
         gallery: [
           {
             title: '',
-            img: 'pages/projects/wedding-album/1.jpg',
+            img: 'pages/projects/photo/2.jpg',
             attr: {
-              width: '5/12',
-              left: 16,
-              top: 20,
+              width: 'full',
               zIndex: 2
-            }
-          },
-          {
-            title: '',
-            img: 'pages/projects/wedding-album/2.jpg',
-            attr: {
-              width: '4/12',
-              left: 24,
-              top: 8,
-              zIndex: 3
-            }
-          },
-          {
-            title: '',
-            img: 'pages/projects/wedding-album/3.jpg',
-            attr: {
-              left: 8,
-              width: '1/3'
-            }
-          },
-          {
-            title: '',
-            img: 'pages/projects/wedding-album/4.jpg',
-            attr: {
-              left: 16,
-              width: '7/12'
             }
           }
         ],
-        links: []
+        links: [
+        ]
+      },
+      {
+        slug: 'lune-jave',
+        type: 'photo-gallery',
+        title: 'Lunejave Wedding Album | Rustic',
+        description: 'from Indonesia',
+        img: 'pages/projects/photo/3.jpg',
+        imgSlider: 'pages/projects/photo/3-f.jpg',
+        longDescription: 'Quoi de mieux que de pouvoir découvrir ses produits préférés sous tous les angles ! Modélisés en webGL, nous offrons aux futurs clients de Wedze l’opportunité de découvrir les masques en détail mais aussi de trouver le casque adéquat pour compléter leur achat. Notre volonté était ici de proposer un outil ergonomiquement simple et   novateur tout en privilégiant l’aspect chaleureux et technique que véhicule la marque.',
+        skills: [
+          'Development',
+          'UI/UX',
+          'Photography'
+        ],
+        gallery: [
+          {
+            title: '',
+            img: 'pages/projects/photo/3.jpg',
+            attr: {
+              width: 'full',
+              zIndex: 2
+            }
+          }
+        ],
+        links: [
+        ]
+      },
+      {
+        slug: 'sidji-coffee',
+        type: 'photo-gallery',
+        title: 'Sidji | Coffee Shop',
+        description: 'from Indonesia',
+        img: 'pages/projects/photo/4.jpg',
+        imgSlider: 'pages/projects/photo/4-f.jpg',
+        longDescription: 'Quoi de mieux que de pouvoir découvrir ses produits préférés sous tous les angles ! Modélisés en webGL, nous offrons aux futurs clients de Wedze l’opportunité de découvrir les masques en détail mais aussi de trouver le casque adéquat pour compléter leur achat. Notre volonté était ici de proposer un outil ergonomiquement simple et   novateur tout en privilégiant l’aspect chaleureux et technique que véhicule la marque.',
+        skills: [
+          'Development',
+          'UI/UX',
+          'Photography'
+        ],
+        gallery: [
+          {
+            title: '',
+            img: 'pages/projects/photo/4.jpg',
+            attr: {
+              width: 'full',
+              zIndex: 2
+            }
+          }
+        ],
+        links: [
+        ]
+      },
+      {
+        slug: 'lunejave-leather',
+        type: 'photo-gallery',
+        title: 'Lunejave Wedding Album | Leather',
+        description: 'from Indonesia',
+        img: 'pages/projects/photo/5.jpg',
+        imgSlider: 'pages/projects/photo/5-f.jpg',
+        longDescription: 'Quoi de mieux que de pouvoir découvrir ses produits préférés sous tous les angles ! Modélisés en webGL, nous offrons aux futurs clients de Wedze l’opportunité de découvrir les masques en détail mais aussi de trouver le casque adéquat pour compléter leur achat. Notre volonté était ici de proposer un outil ergonomiquement simple et   novateur tout en privilégiant l’aspect chaleureux et technique que véhicule la marque.',
+        skills: [
+          'Development',
+          'UI/UX',
+          'Photography'
+        ],
+        gallery: [
+          {
+            title: '',
+            img: 'pages/projects/photo/5.jpg',
+            attr: {
+              width: 'full',
+              zIndex: 2
+            }
+          }
+        ],
+        links: [
+        ]
+      },
+      {
+        slug: 'triple-overlight',
+        type: 'photo-gallery',
+        title: 'Triple Overlight Wedding Album | Wood',
+        description: 'from Indonesia',
+        img: 'pages/projects/photo/6.jpg',
+        imgSlider: 'pages/projects/photo/6-f.jpg',
+        longDescription: 'Quoi de mieux que de pouvoir découvrir ses produits préférés sous tous les angles ! Modélisés en webGL, nous offrons aux futurs clients de Wedze l’opportunité de découvrir les masques en détail mais aussi de trouver le casque adéquat pour compléter leur achat. Notre volonté était ici de proposer un outil ergonomiquement simple et   novateur tout en privilégiant l’aspect chaleureux et technique que véhicule la marque.',
+        skills: [
+          'Development',
+          'UI/UX',
+          'Photography'
+        ],
+        gallery: [
+          {
+            title: '',
+            img: 'pages/projects/photo/6.jpg',
+            attr: {
+              width: 'full',
+              zIndex: 2
+            }
+          }
+        ],
+        links: [
+        ]
+      },
+      {
+        slug: '308-absolute',
+        type: 'photo-gallery',
+        title: '308 Absolute Unscared | Clothing',
+        description: 'from Indonesia',
+        img: 'pages/projects/photo/7.jpg',
+        imgSlider: 'pages/projects/photo/7-f.jpg',
+        longDescription: 'Quoi de mieux que de pouvoir découvrir ses produits préférés sous tous les angles ! Modélisés en webGL, nous offrons aux futurs clients de Wedze l’opportunité de découvrir les masques en détail mais aussi de trouver le casque adéquat pour compléter leur achat. Notre volonté était ici de proposer un outil ergonomiquement simple et   novateur tout en privilégiant l’aspect chaleureux et technique que véhicule la marque.',
+        skills: [
+          'Development',
+          'UI/UX',
+          'Photography'
+        ],
+        gallery: [
+          {
+            title: '',
+            img: 'pages/projects/photo/7.jpg',
+            attr: {
+              width: 'full',
+              zIndex: 2
+            }
+          }
+        ],
+        links: [
+        ]
+      },
+      {
+        slug: 'arazki-bags',
+        type: 'photo-gallery',
+        title: 'Arazki | Bags',
+        description: 'from Indonesia',
+        img: 'pages/projects/photo/8.jpg',
+        imgSlider: 'pages/projects/photo/8-f.jpg',
+        longDescription: 'Quoi de mieux que de pouvoir découvrir ses produits préférés sous tous les angles ! Modélisés en webGL, nous offrons aux futurs clients de Wedze l’opportunité de découvrir les masques en détail mais aussi de trouver le casque adéquat pour compléter leur achat. Notre volonté était ici de proposer un outil ergonomiquement simple et   novateur tout en privilégiant l’aspect chaleureux et technique que véhicule la marque.',
+        skills: [
+          'Development',
+          'UI/UX',
+          'Photography'
+        ],
+        gallery: [
+          {
+            title: '',
+            img: 'pages/projects/photo/8.jpg',
+            attr: {
+              width: 'full',
+              zIndex: 2
+            }
+          }
+        ],
+        links: [
+        ]
       }
     ]
   }]
