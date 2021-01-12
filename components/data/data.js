@@ -68,81 +68,62 @@ export default {
     description: 'We make logo designs to meet customer needs as one of the identities of a product that is owned.',
     works: [
       {
-        slug: 're-logo',
+        slug: 'omahtreatment',
         type: 'logo',
-        title: 'Royal Empire',
+        title: 'Omah Treatment | Skin Care',
         description: 'From Indonesia',
-        img: 'pages/projects/re.jpg',
+        img: 'pages/projects/logo/1.jpg',
         longDescription: 'Quoi de mieux que de pouvoir découvrir ses produits préférés sous tous les angles ! Modélisés en webGL, nous offrons aux futurs clients de Wedze l’opportunité de découvrir les masques en détail mais aussi de trouver le casque adéquat pour compléter leur achat. Notre volonté était ici de proposer un outil ergonomiquement simple et   novateur tout en privilégiant l’aspect chaleureux et technique que véhicule la marque.',
         skills: [
-          'Development',
-          'UI/UX',
-          'Photography'
+          'Logo Design'
         ],
         gallery: [
           {
             title: '',
-            img: 'pages/projects/buper.jpg'
-          }
-        ],
-        links: []
-      },
-      {
-        slug: 'xo-logo',
-        type: 'logo',
-        title: 'XO Coffee Bean',
-        description: 'From Indonesia',
-        img: 'pages/projects/xo.jpg',
-        longDescription: 'Quoi de mieux que de pouvoir découvrir ses produits préférés sous tous les angles ! Modélisés en webGL, nous offrons aux futurs clients de Wedze l’opportunité de découvrir les masques en détail mais aussi de trouver le casque adéquat pour compléter leur achat. Notre volonté était ici de proposer un outil ergonomiquement simple et   novateur tout en privilégiant l’aspect chaleureux et technique que véhicule la marque.',
-        skills: [
-          'Development',
-          'UI/UX',
-          'Photography'
-        ],
-        gallery: [
+            img: 'pages/projects/logo/omahtreatment/1.jpg',
+            attr: {
+              width: '1/2',
+              left: 8,
+              top: 16,
+              zIndex: 3
+            }
+          },
           {
             title: '',
-            img: 'pages/projects/buper.jpg'
-          }
-        ],
-        links: []
-      },
-      {
-        slug: 'osteak-logo',
-        type: 'logo',
-        title: 'Oesteak Furniture',
-        description: 'From USA',
-        img: 'pages/projects/osteak.jpg',
-        longDescription: 'Quoi de mieux que de pouvoir découvrir ses produits préférés sous tous les angles ! Modélisés en webGL, nous offrons aux futurs clients de Wedze l’opportunité de découvrir les masques en détail mais aussi de trouver le casque adéquat pour compléter leur achat. Notre volonté était ici de proposer un outil ergonomiquement simple et   novateur tout en privilégiant l’aspect chaleureux et technique que véhicule la marque.',
-        skills: [
-          'Development',
-          'UI/UX',
-          'Photography'
-        ],
-        gallery: [
+            img: 'pages/projects/logo/omahtreatment/2.jpg',
+            attr: {
+              width: '1/3',
+              left: 16,
+              top: 8,
+              zIndex: 3
+            }
+          },
           {
             title: '',
-            img: 'pages/projects/osteak.jpg'
-          }
-        ],
-        links: []
-      },
-      {
-        slug: 'buper-logo',
-        type: 'logo',
-        title: 'Buper',
-        description: 'From Indonesia',
-        img: 'pages/projects/buper.jpg',
-        longDescription: 'Quoi de mieux que de pouvoir découvrir ses produits préférés sous tous les angles ! Modélisés en webGL, nous offrons aux futurs clients de Wedze l’opportunité de découvrir les masques en détail mais aussi de trouver le casque adéquat pour compléter leur achat. Notre volonté était ici de proposer un outil ergonomiquement simple et   novateur tout en privilégiant l’aspect chaleureux et technique que véhicule la marque.',
-        skills: [
-          'Development',
-          'UI/UX',
-          'Photography'
-        ],
-        gallery: [
+            img: 'pages/projects/logo/omahtreatment/3.jpg',
+            attr: {
+              width: '1/3',
+              bottom: 8,
+              zIndex: 2
+            }
+          },
           {
             title: '',
-            img: 'pages/projects/buper.jpg'
+            img: 'pages/projects/logo/omahtreatment/4.jpg',
+            attr: {
+              width: '2/3',
+              left: 8
+            }
+          },
+          {
+            title: '',
+            img: 'pages/projects/logo/omahtreatment/5.jpg',
+            attr: {
+              left: 64,
+              bottom: 40,
+              width: '1/2',
+              zIndex: 1
+            }
           }
         ],
         links: []
