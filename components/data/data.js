@@ -73,7 +73,7 @@ export default {
         title: 'Omah Treatment | Skin Care',
         description: 'From Indonesia',
         img: 'pages/projects/logo/1.jpg',
-        longDescription: 'Quoi de mieux que de pouvoir découvrir ses produits préférés sous tous les angles ! Modélisés en webGL, nous offrons aux futurs clients de Wedze l’opportunité de découvrir les masques en détail mais aussi de trouver le casque adéquat pour compléter leur achat. Notre volonté était ici de proposer un outil ergonomiquement simple et   novateur tout en privilégiant l’aspect chaleureux et technique que véhicule la marque.',
+        longDescription: 'Proudly presenting our new work, Logo for @omahtreatment they are aesthetic beauty clinic that offers 3 services namely Make up, Brows Art and Facials. Omah Treatment also sells various cosmetic products to support the 3 treatments above.',
         skills: [
           'Logo Design'
         ],
