@@ -25,7 +25,9 @@
               <slide v-for="(item, i) in currentService.works" :key="i">
                 <div class="xl:pr-8 font-extra-light" @click="carouselIndex = i">
                   <div class="our-work--img my-8">
-                    <img :src="require('~/static/img/' + (item.imgSlider ? item.imgSlider : item.img))" class="w-full" alt="">
+                    <nuxt-link :to="`/project/${item.slug}`">
+                      <img-card :img="item.img" :title="item.title" :description="item.description" class="w-full" />
+                    </nuxt-link>
                   </div>
                   <h3 class="text-4xl mb-4">
                     {{ currentService.title }}
