@@ -126,7 +126,11 @@ export default {
             }
           }
         ],
-        links: []
+        links: [
+          {
+            text: '@omahtreatment',
+            url: 'https://instagram.com/omahtreatment'
+          }]
       }
     ]
   },

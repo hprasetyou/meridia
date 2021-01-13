@@ -36,10 +36,6 @@ export default {
           link: '/capabilities'
         },
         {
-          text: 'About',
-          link: '/about'
-        },
-        {
           text: 'Contacts',
           link: '/contact'
         }
