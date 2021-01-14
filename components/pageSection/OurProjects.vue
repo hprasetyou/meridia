@@ -26,7 +26,7 @@
                 <div class="xl:pr-8 font-extra-light" @click="carouselIndex = i">
                   <div class="our-work--img my-8">
                     <nuxt-link :to="`/project/${item.slug}`">
-                      <img-card :img="item.img" :title="item.title" :description="item.description" class="w-full" />
+                      <img-card :img="item.img" :title="item.title" :description="item.description" :with-description="false" class="w-full" />
                     </nuxt-link>
                   </div>
                   <h3 class="text-4xl mb-4">
