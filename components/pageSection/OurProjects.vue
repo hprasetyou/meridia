@@ -36,7 +36,7 @@
                     {{ item.title }} - {{ item.description }}
                   </p>
                   <nuxt-link class="underline hover:text-indigo-600" :to="`/project/${item.slug}`">
-                    See More
+                    See Detail
                   </nuxt-link>
                 </div>
               </slide>

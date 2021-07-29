@@ -143,11 +143,6 @@ support the 3 treatments above.`,
     ]
   },
   {
-    title: 'Social Media',
-    description: 'What you need to know about using social media for your business is very important to today\'s business trends.  where users can easily participate, interact, share, and create content helping to connect customers with business people to get the goals they want.',
-    works: []
-  },
-  {
     title: 'Photo Product',
     description: 'We help customers wholeheartedly with the aim of answering customer problems and desires.  with us, the needs of social media are met, such as the design of product catalog photos for activities in the world of social media.',
     works: [
