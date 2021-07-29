@@ -1,6 +1,6 @@
 <template>
   <div class="px-4">
-    <our-projects :show-as-grid="true" class="my-20 md:my-16" :selected="2" :services="services" />
+    <our-projects :show-as-grid="true" class="my-20 md:my-16" :selected="0" :services="services" />
   </div>
 </template>
 <script>
