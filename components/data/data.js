@@ -21,6 +21,7 @@ support the 3 treatments above.`,
           {
             title: '',
             img: 'pages/projects/web/ot/1.jpg',
+            link: 'http://omahtreatment.com',
             attr: {
               width: 'full',
               class: 'mb-8'
@@ -55,6 +56,7 @@ support the 3 treatments above.`,
           {
             title: '',
             img: 'pages/projects/mobile/btw/1.jpg',
+            link: 'http://besttowrite.com',
             attr: {
               width: 'full',
               class: 'mb-8'

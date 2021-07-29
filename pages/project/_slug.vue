@@ -20,7 +20,7 @@
         </div>
         <div class="flex mt-8">
           <div v-for="(item, i) in currentProject.links" :key="i" class="w-1/2">
-            <a class="text-indigo-600 underline" :href="item.url">{{ item.text }}</a>
+            <a class="text-indigo-600 underline" :href="item.url" target="_blank">{{ item.text }}</a>
           </div>
         </div>
       </div>
