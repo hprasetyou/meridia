@@ -27,7 +27,7 @@
       <div class="md:w-1/2">
         <div class="w-full flex">
           <div class="mx-auto">
-            <div class="flex" style="min-width: 250px;">
+            <div class="flex" style="min-width: 330px;">
               <div class="w-1/2 text-right mr-3 font-medium">
                 Skills:
               </div>

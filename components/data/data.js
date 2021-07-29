@@ -2,63 +2,69 @@ export default {
   projects: [{
     title: 'Web Design',
     description: 'Web development process for creating a website that focuses on aesthetic factors like layout, user interface and other visual imagery in order to make the website more visually appealing and easy to use.',
-    works: []
+    works: [
+      {
+        slug: 'omah-treatment-web',
+        type: 'photo-gallery',
+        title: 'Omah Treatment',
+        description: 'Skincare e-commerce',
+        img: 'pages/projects/web/ot/cover.jpg',
+        longDescription: `Proudly presenting our new work, Website for @omahtreatment they are
+aesthetic beauty clinic that offers 3 services namely Make up, Brows Art
+and Facials. Omah Treatment also sells various cosmetic products to
+support the 3 treatments above.`,
+        skills: [
+          'Web Design',
+          'Web Development'
+        ],
+        gallery: [
+          {
+            title: '',
+            img: 'pages/projects/web/ot/1.jpg',
+            attr: {
+              width: 'full',
+              class: 'mb-8'
+            }
+          }
+        ],
+        links: [
+          {
+            text: 'omahtreatment.com',
+            url: 'http://omahtreatment.com'
+          }
+        ]
+      }
+    ]
   },
   {
     title: 'Mobile App Design',
     description: 'mobile applications that we will create to design and answer customer needs.  Although mobile applications have a wide variety of uses, what matters most is the need for optimal usability, accessibility, and the overall user experience.',
     works: [
       {
-        slug: 'buper-mobile',
+        slug: 'best-to-write',
         type: 'photo-gallery',
-        title: 'Buper',
-        description: 'a Statup brand.',
-        img: 'pages/projects/buper-mobile/1.jpg',
-        longDescription: 'Quoi de mieux que de pouvoir découvrir ses produits préférés sous tous les angles ! Modélisés en webGL, nous offrons aux futurs clients de Wedze l’opportunité de découvrir les masques en détail mais aussi de trouver le casque adéquat pour compléter leur achat. Notre volonté était ici de proposer un outil ergonomiquement simple et   novateur tout en privilégiant l’aspect chaleureux et technique que véhicule la marque.',
+        title: 'Best to Write',
+        description: 'Tempat Kamu Berbagi Cerita',
+        img: 'pages/projects/mobile/btw/cover.jpg',
+        longDescription: 'Proudly presenting our new work, Mobile App for Best to Write they are a startup that is engaged in writing a book, and also a place to sell books',
         skills: [
-          'Development',
-          'UI/UX',
-          'Photography'
+          'Mobile App Design',
+          'Mobile development'
         ],
         gallery: [
           {
             title: '',
-            img: 'pages/projects/buper-mobile/1.jpg',
+            img: 'pages/projects/mobile/btw/1.jpg',
             attr: {
               width: 'full',
               class: 'mb-8'
-            }
-          },
-          {
-            title: '',
-            img: 'pages/projects/buper-mobile/2.jpg',
-            attr: {
-              width: '1/4'
-            }
-          },
-          {
-            title: '',
-            img: 'pages/projects/buper-mobile/3.jpg',
-            attr: {
-              width: '1/4'
-            }
-          },
-          {
-            title: '',
-            img: 'pages/projects/buper-mobile/4.jpg',
-            attr: {
-              width: '1/4'
             }
           }
         ],
         links: [
           {
-            text: '@Buper',
-            url: ''
-          },
-          {
-            text: 'Behance',
-            url: ''
+            text: 'besttowrite.com',
+            url: 'http://besttowrite.com'
           }
         ]
       }]
