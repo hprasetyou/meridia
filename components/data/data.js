@@ -34,6 +34,36 @@ support the 3 treatments above.`,
             url: 'http://omahtreatment.com'
           }
         ]
+      },
+      {
+        slug: 'royal-empire',
+        type: 'photo-gallery',
+        title: 'Royal Empire',
+        description: 'Furniture e-commerce',
+        img: 'pages/projects/web/re/cover.jpg',
+        longDescription: `Website for luxury Furniture Products, B2C e-commerce for Royal Empire
+furniture, offering a variety of furniture products to meet home needs.`,
+        skills: [
+          'Web Design',
+          'Web Development'
+        ],
+        gallery: [
+          {
+            title: '',
+            img: 'pages/projects/web/re/1.jpg',
+            link: 'https://www.behance.net/gallery/93989647/Royal-Empire-Home-Furniture-Web-UI-UX-Design',
+            attr: {
+              width: 'full',
+              class: 'mb-8'
+            }
+          }
+        ],
+        links: [
+          {
+            text: 'behance',
+            url: 'https://www.behance.net/gallery/93989647/Royal-Empire-Home-Furniture-Web-UI-UX-Design'
+          }
+        ]
       }
     ]
   },
