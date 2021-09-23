@@ -40,7 +40,7 @@
             <div class="md:w-1/4 pt-6">
               <p>
                 <span class="mr-4">T:</span>
-                <a href="tel:081232080801">081 232 080801</a>
+                <a href="tel:081213657170">081213657170</a>
               </p>
               <p>
                 <span class="md:mr-4">E:</span>
