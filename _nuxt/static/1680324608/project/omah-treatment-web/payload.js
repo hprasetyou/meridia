@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/project/omah-treatment-web", {data:[{}],fetch:[],mutations:[]});
