@@ -1,0 +1,1 @@
+.mr-input-wrapper label{transition:all .2s ease-in-out;left:10px;top:50%;transform:translateY(-50%);opacity:.5}.mr-input-wrapper.is-active label{opacity:1;top:-10px;left:5px;transform:none;font-size:.75em}.mr-input-wrapper input:-internal-autofill-selected{background-color:transparent!important}
